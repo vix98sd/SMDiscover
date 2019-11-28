@@ -41,7 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="models\City.cs" />
+    <Compile Include="models\Country.cs" />
+    <Compile Include="models\Rating.cs" />
+    <Compile Include="models\Shop.cs" />
+    <Compile Include="models\ShoppingMall.cs" />
+    <Compile Include="models\SMShop.cs" />
+    <Compile Include="models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sql_db\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
