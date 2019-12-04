@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataLayer</RootNamespace>
     <AssemblyName>DataLayer</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitiesRepository.cs" />
+    <Compile Include="CountriesRepository.cs" />
     <Compile Include="models\City.cs" />
     <Compile Include="models\Country.cs" />
     <Compile Include="models\Rating.cs" />
@@ -49,6 +52,11 @@
     <Compile Include="models\SMShop.cs" />
     <Compile Include="models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingsRepository.cs" />
+    <Compile Include="ShoppingMallsRepository.cs" />
+    <Compile Include="ShopsRepository.cs" />
+    <Compile Include="SMShopsRepository.cs" />
+    <Compile Include="UsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sql_db\" />
