@@ -61,5 +61,8 @@
   <ItemGroup>
     <Folder Include="sql_db\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseCreateTableQueries.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
