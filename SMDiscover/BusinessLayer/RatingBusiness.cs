@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class Rating
+    public class RatingBusiness
     {
-        public int UserId { get; set; }
-        public int ShopId { get; set; }
-        public int Rate { get; set; }
-        public string Comment { get; set; }
+
     }
 }

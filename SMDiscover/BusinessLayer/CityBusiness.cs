@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class City
+    public class CityBusiness
     {
-        public City()
-        {
-            Country = new Country();
-        }
-
-        public string CityName { get; set; }
-        public Country Country { get; set; }
+	
     }
 }

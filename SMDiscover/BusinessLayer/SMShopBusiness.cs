@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class SMShop
+    public class SMShopBusiness
     {
-        public int No { get; set; }
-        public int SMId { get; set; }
-        public int ShopId { get; set; }
+
     }
 }
