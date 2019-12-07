@@ -16,6 +16,6 @@ namespace DataLayer.models
         public string Username { get; set; }
         public string SecretQuestion { get; set; }
         public string Answer { get; set; }
-        public bool Admin { get; set; }
+        public int Admin { get; set; }
     }
 }
