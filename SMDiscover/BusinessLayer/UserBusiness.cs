@@ -10,14 +10,14 @@ namespace BusinessLayer
 {
     public class UserBusiness
     {
-	private UsersRepository usersRepository;
-        public UsersBusiness()
+	    private UsersRepository usersRepository;
+        public UserBusiness()
         {
             this.usersRepository = new UsersRepository();
         }
-        public List<Users> GetAllUsers()
+        public List<User> GetAllUsers()
         {
-            return this.usersRepository.GetAllUsersFromDB();
+            return this.usersRepository.GetAllUsers();
         }
     }
 }
