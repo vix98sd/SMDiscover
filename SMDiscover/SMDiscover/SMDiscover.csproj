@@ -56,18 +56,73 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Compile Include="AdminFrame.xaml.cs">
+      <DependentUpon>AdminFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMallFrame.xaml.cs">
+      <DependentUpon>AdminMallFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminShopFrame.xaml.cs">
+      <DependentUpon>AdminShopFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserFrame.xaml.cs">
+      <DependentUpon>AdminUserFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordFrame.xaml.cs">
+      <DependentUpon>ForgotPasswordFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingFrame.xaml.cs">
+      <DependentUpon>LoadingFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrame.xaml.cs">
+      <DependentUpon>MainFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterFrame.xaml.cs">
+      <DependentUpon>RegisterFrame.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AdminFrame.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminMallFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminShopFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUserFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ForgotPasswordFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadingFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LogInFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="LogInFrame.xaml.cs">
+      <DependentUpon>LogInFrame.xaml</DependentUpon>
     </Compile>
+    <Page Include="RegisterFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
