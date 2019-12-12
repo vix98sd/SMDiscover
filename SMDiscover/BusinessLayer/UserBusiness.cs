@@ -10,7 +10,7 @@ namespace BusinessLayer
 {
     public class UserBusiness
     {
-	    private UsersRepository usersRepository;
+	private UsersRepository usersRepository;
         public UserBusiness()
         {
             this.usersRepository = new UsersRepository();

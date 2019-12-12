@@ -10,6 +10,14 @@ namespace BusinessLayer
 {
     public class CountryBusiness
     {
-
+	private CountiresRepository countiresRepository;
+        public CountryBusiness()
+        {
+            this.countriesRepository = new CountriesRepository();
+        }
+        public List<Country> GetAllCountires()
+        {
+            return this.countriesRepository.GetAllCountires();
+        }
     }
 }
