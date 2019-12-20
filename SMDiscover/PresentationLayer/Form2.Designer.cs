@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -11,6 +11,7 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -39,9 +40,8 @@
             this.lblLazar = new System.Windows.Forms.Label();
             this.lblVanja = new System.Windows.Forms.Label();
             this.SidePanel = new System.Windows.Forms.Panel();
-            this.btnForgotPassword = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnDiscover = new System.Windows.Forms.Button();
             this.lblCopyRight = new System.Windows.Forms.Label();
             this.panelDecoration1 = new System.Windows.Forms.Panel();
             this.panelIcon = new System.Windows.Forms.Panel();
@@ -52,9 +52,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnNotifications = new System.Windows.Forms.Button();
-            this.forgotPassword1 = new PresentationLayer.ForgotPassword();
-            this.register1 = new PresentationLayer.Register();
-            this.login1 = new PresentationLayer.Login();
+            this.shoppingMall1 = new PresentationLayer.ShoppingMall();
+            this.discover1 = new PresentationLayer.Discover();
+            this.about1 = new PresentationLayer.About();
+            this.shop1 = new PresentationLayer.Shop();
+            this.review1 = new PresentationLayer.Review();
             this.MenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbShop)).BeginInit();
             this.panelIcon.SuspendLayout();
@@ -75,9 +77,8 @@
             this.MenuPanel.Controls.Add(this.lblLazar);
             this.MenuPanel.Controls.Add(this.lblVanja);
             this.MenuPanel.Controls.Add(this.SidePanel);
-            this.MenuPanel.Controls.Add(this.btnForgotPassword);
-            this.MenuPanel.Controls.Add(this.btnRegister);
-            this.MenuPanel.Controls.Add(this.btnLogin);
+            this.MenuPanel.Controls.Add(this.btnAbout);
+            this.MenuPanel.Controls.Add(this.btnDiscover);
             this.MenuPanel.Controls.Add(this.lblCopyRight);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
@@ -202,53 +203,37 @@
             this.SidePanel.Size = new System.Drawing.Size(10, 54);
             this.SidePanel.TabIndex = 4;
             // 
-            // btnForgotPassword
+            // btnAbout
             // 
-            this.btnForgotPassword.FlatAppearance.BorderSize = 0;
-            this.btnForgotPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForgotPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgotPassword.ForeColor = System.Drawing.Color.White;
-            this.btnForgotPassword.Image = global::PresentationLayer.Properties.Resources.forgot;
-            this.btnForgotPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnForgotPassword.Location = new System.Drawing.Point(12, 257);
-            this.btnForgotPassword.Name = "btnForgotPassword";
-            this.btnForgotPassword.Size = new System.Drawing.Size(197, 54);
-            this.btnForgotPassword.TabIndex = 4;
-            this.btnForgotPassword.Text = "Forgot Password";
-            this.btnForgotPassword.UseVisualStyleBackColor = true;
-            this.btnForgotPassword.Click += new System.EventHandler(this.button3_Click);
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.ForeColor = System.Drawing.Color.White;
+            this.btnAbout.Image = global::PresentationLayer.Properties.Resources.about_32px;
+            this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAbout.Location = new System.Drawing.Point(12, 203);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(197, 54);
+            this.btnAbout.TabIndex = 4;
+            this.btnAbout.Text = "About";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnRegister
+            // btnDiscover
             // 
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Image = global::PresentationLayer.Properties.Resources.adduser;
-            this.btnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegister.Location = new System.Drawing.Point(12, 203);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(197, 54);
-            this.btnRegister.TabIndex = 4;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Image = global::PresentationLayer.Properties.Resources.login;
-            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(12, 149);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(197, 54);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btnDiscover.FlatAppearance.BorderSize = 0;
+            this.btnDiscover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscover.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscover.ForeColor = System.Drawing.Color.White;
+            this.btnDiscover.Image = global::PresentationLayer.Properties.Resources.location_32px;
+            this.btnDiscover.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscover.Location = new System.Drawing.Point(12, 149);
+            this.btnDiscover.Name = "btnDiscover";
+            this.btnDiscover.Size = new System.Drawing.Size(197, 54);
+            this.btnDiscover.TabIndex = 4;
+            this.btnDiscover.Text = "Discover";
+            this.btnDiscover.UseVisualStyleBackColor = true;
+            this.btnDiscover.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblCopyRight
             // 
@@ -360,39 +345,63 @@
             this.btnNotifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNotifications.UseVisualStyleBackColor = true;
             // 
-            // forgotPassword1
+            // shoppingMall1
             // 
-            this.forgotPassword1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.forgotPassword1.Location = new System.Drawing.Point(243, 149);
-            this.forgotPassword1.Name = "forgotPassword1";
-            this.forgotPassword1.Size = new System.Drawing.Size(771, 422);
-            this.forgotPassword1.TabIndex = 15;
+            this.shoppingMall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.shoppingMall1.Discover = null;
+            this.shoppingMall1.Location = new System.Drawing.Point(243, 149);
+            this.shoppingMall1.Name = "shoppingMall1";
+            this.shoppingMall1.Shop = null;
+            this.shoppingMall1.Size = new System.Drawing.Size(771, 422);
+            this.shoppingMall1.TabIndex = 17;
             // 
-            // register1
+            // discover1
             // 
-            this.register1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.register1.Location = new System.Drawing.Point(243, 149);
-            this.register1.Name = "register1";
-            this.register1.Size = new System.Drawing.Size(771, 422);
-            this.register1.TabIndex = 13;
+            this.discover1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.discover1.Location = new System.Drawing.Point(243, 149);
+            this.discover1.Name = "discover1";
+            this.discover1.ShoppingMall = null;
+            this.discover1.Size = new System.Drawing.Size(771, 422);
+            this.discover1.TabIndex = 16;
             // 
-            // login1
+            // about1
             // 
-            this.login1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.login1.Location = new System.Drawing.Point(243, 149);
-            this.login1.Name = "login1";
-            this.login1.Size = new System.Drawing.Size(771, 422);
-            this.login1.TabIndex = 12;
+            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.about1.Location = new System.Drawing.Point(243, 149);
+            this.about1.Name = "about1";
+            this.about1.Size = new System.Drawing.Size(771, 422);
+            this.about1.TabIndex = 15;
             // 
-            // Form1
+            // shop1
+            // 
+            this.shop1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.shop1.Location = new System.Drawing.Point(243, 149);
+            this.shop1.Name = "shop1";
+            this.shop1.Review = null;
+            this.shop1.ShoppingMall = null;
+            this.shop1.Size = new System.Drawing.Size(771, 422);
+            this.shop1.TabIndex = 18;
+            // 
+            // review1
+            // 
+            this.review1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.review1.Location = new System.Drawing.Point(648, 224);
+            this.review1.Name = "review1";
+            this.review1.Shop = null;
+            this.review1.Size = new System.Drawing.Size(351, 271);
+            this.review1.TabIndex = 19;
+            // 
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 583);
-            this.Controls.Add(this.forgotPassword1);
+            this.Controls.Add(this.review1);
+            this.Controls.Add(this.shop1);
+            this.Controls.Add(this.shoppingMall1);
+            this.Controls.Add(this.discover1);
+            this.Controls.Add(this.about1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.register1);
-            this.Controls.Add(this.login1);
             this.Controls.Add(this.panelDecoration2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnNotifications);
@@ -400,9 +409,9 @@
             this.Controls.Add(this.panelDecoration1);
             this.Controls.Add(this.MenuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Form2";
             this.MenuPanel.ResumeLayout(false);
             this.MenuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbShop)).EndInit();
@@ -417,21 +426,18 @@
         #endregion
 
         private System.Windows.Forms.Panel MenuPanel;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnDiscover;
         private System.Windows.Forms.Panel panelDecoration1;
         private System.Windows.Forms.Panel panelIcon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel SidePanel;
-        private System.Windows.Forms.Button btnForgotPassword;
         private System.Windows.Forms.Button btnNotifications;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panelDecoration2;
         private System.Windows.Forms.Label lblCopyRight;
-        private Login login1;
-        private Register register1;
         private System.Windows.Forms.Label lblIlija;
         private System.Windows.Forms.Label lblMilos;
         private System.Windows.Forms.Label lblLazar;
@@ -441,8 +447,12 @@
         private System.Windows.Forms.Button btnIlija;
         private System.Windows.Forms.Button btnMilos;
         private System.Windows.Forms.Button btnLazar;
-        private ForgotPassword forgotPassword1;
         private System.Windows.Forms.PictureBox pbShop;
+        private About about1;
+        public ShoppingMall shoppingMall1;
+        public Discover discover1;
+        private Shop shop1;
+        private Review review1;
     }
 }
 
