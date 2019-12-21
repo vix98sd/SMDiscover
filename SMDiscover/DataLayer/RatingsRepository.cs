@@ -48,7 +48,8 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "INSERT INTO RATINGS (ID_USER, ID_SHOP, RATE, COMMENT) VALUES(" + string.Format(
-                    "'{0}', '{1}', '{2}', '{3}'", rating.UserId, rating.ShopId, rating.Rate, rating.Comment) + ")";
+                    "{0}, {1}, {2}, '{3}'", rating.UserId, rating.ShopId, rating.Rate, rating.Comment) + ")";
+
                 return sqlCommand.ExecuteNonQuery();
             }
         }
