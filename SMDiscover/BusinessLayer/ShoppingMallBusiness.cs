@@ -12,7 +12,10 @@ namespace BusinessLayer
     {
         public List<ShoppingMall> GetAllShoppingMalls()
         {
-            List<ShoppingMall> allShoppingMalls = new List<ShoppingMall>(); // Zameniti sa pozivom fje iz DataLayera, kad bude gotova
+            ShoppingMallsRepository shoppingMallsRepository = new ShoppingMallsRepository();
+            List<ShoppingMall> allShoppingMalls = shoppingMallsRepository.GetAllShoppingMalls();
+
+            //List<ShoppingMall> allShoppingMalls = new List<ShoppingMall>(); // Zameniti sa pozivom fje iz DataLayera, kad bude gotova
 
             allShoppingMalls = SetShops(allShoppingMalls);
 
