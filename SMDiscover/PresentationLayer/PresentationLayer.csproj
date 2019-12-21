@@ -290,5 +290,15 @@
   <ItemGroup>
     <None Include="Images\add_to_favorites_32px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{3E139962-6EF1-4DF9-A80C-25B32146F28D}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{F5BE6D30-5239-4471-8B19-503CF0AE97AC}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
