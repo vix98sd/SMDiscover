@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataLayer.models;
+using BusinessLayer;
 
 namespace PresentationLayer
 {
     public partial class Review : UserControl
     {
+        public User User { get; set; }
         public Shop Shop
         {
             get; set;
@@ -24,6 +27,12 @@ namespace PresentationLayer
         private void btnBack_Click(object sender, EventArgs e)
         {
             Shop?.BringToFront();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            RatingBusiness ratingBusiness = new RatingBusiness();
+            Rating rating = new Rating();
         }
     }
 }

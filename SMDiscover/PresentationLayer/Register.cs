@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataLayer.models;
 using BusinessLayer;
+using System.Text.RegularExpressions;
 
 namespace PresentationLayer
 {
@@ -28,7 +29,7 @@ namespace PresentationLayer
         {
             try 
             {
-                if (tbName.Text == "" || tbSurname.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "" || tbConfirm.Text == "" || cbSecQuestion.Text == "" || tbAnswer.Text == "")
+                if (tbName.Text == "" || tbSurname.Text == "" || tbEmail.Text == "" || tbUsername.Text == "" || tbPassword.Text == "" || tbConfirm.Text == "" || cbSecQuestion.SelectedIndex == -1 || tbAnswer.Text == "")
                     throw new Exception("You must fill all the fields!");
 
                 if (tbUsername.Text.Length < 6)
@@ -39,6 +40,10 @@ namespace PresentationLayer
 
                 if (tbPassword.Text != tbConfirm.Text)
                     throw new Exception("Passwords must match up!");
+
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                if (!regex.Match(tbEmail.Text).Success)
+                    throw new Exception("E-mail is not correct!");
 
                 User user = new User
                 {
