@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataLayer;
 using DataLayer.models;
+using BusinessLayer;
 
 namespace PresentationLayer
 {
@@ -50,6 +50,9 @@ namespace PresentationLayer
                     SecretQuestion = cbSecQuestion.SelectedItem.ToString(),
                     Answer = tbAnswer.Text
                 };
+
+                UserBusiness userBusiness = new UserBusiness();
+                userBusiness.InsertUser(user);
             }
             catch (Exception exception)
             {
