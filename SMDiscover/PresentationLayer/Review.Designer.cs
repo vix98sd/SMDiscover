@@ -45,20 +45,23 @@
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = global::PresentationLayer.Properties.Resources.save_32px;
-            this.btnSave.Location = new System.Drawing.Point(139, 222);
+            this.btnSave.Location = new System.Drawing.Point(185, 273);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(64, 33);
+            this.btnSave.Size = new System.Drawing.Size(85, 41);
             this.btnSave.TabIndex = 41;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // trackBarRating
             // 
             this.trackBarRating.LargeChange = 1;
-            this.trackBarRating.Location = new System.Drawing.Point(129, 79);
+            this.trackBarRating.Location = new System.Drawing.Point(172, 97);
+            this.trackBarRating.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarRating.Maximum = 5;
             this.trackBarRating.Minimum = 1;
             this.trackBarRating.Name = "trackBarRating";
-            this.trackBarRating.Size = new System.Drawing.Size(198, 45);
+            this.trackBarRating.Size = new System.Drawing.Size(264, 56);
             this.trackBarRating.TabIndex = 42;
             this.trackBarRating.Value = 1;
             // 
@@ -67,12 +70,13 @@
             this.tbReview.BackColor = System.Drawing.SystemColors.Window;
             this.tbReview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbReview.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbReview.Location = new System.Drawing.Point(129, 145);
+            this.tbReview.Location = new System.Drawing.Point(172, 178);
+            this.tbReview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbReview.Multiline = true;
             this.tbReview.Name = "tbReview";
             this.tbReview.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbReview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbReview.Size = new System.Drawing.Size(198, 61);
+            this.tbReview.Size = new System.Drawing.Size(264, 75);
             this.tbReview.TabIndex = 44;
             // 
             // lblRate
@@ -80,9 +84,10 @@
             this.lblRate.AutoSize = true;
             this.lblRate.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRate.ForeColor = System.Drawing.Color.White;
-            this.lblRate.Location = new System.Drawing.Point(22, 79);
+            this.lblRate.Location = new System.Drawing.Point(29, 97);
+            this.lblRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRate.Name = "lblRate";
-            this.lblRate.Size = new System.Drawing.Size(73, 22);
+            this.lblRate.Size = new System.Drawing.Size(95, 30);
             this.lblRate.TabIndex = 45;
             this.lblRate.Text = "Raiting";
             // 
@@ -90,9 +95,10 @@
             // 
             this.lblReview.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReview.ForeColor = System.Drawing.Color.White;
-            this.lblReview.Location = new System.Drawing.Point(22, 142);
+            this.lblReview.Location = new System.Drawing.Point(29, 175);
+            this.lblReview.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReview.Name = "lblReview";
-            this.lblReview.Size = new System.Drawing.Size(101, 64);
+            this.lblReview.Size = new System.Drawing.Size(135, 79);
             this.lblReview.TabIndex = 46;
             this.lblReview.Text = "Review (optional)";
             // 
@@ -104,16 +110,17 @@
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = global::PresentationLayer.Properties.Resources.back;
-            this.btnBack.Location = new System.Drawing.Point(139, 12);
+            this.btnBack.Location = new System.Drawing.Point(185, 15);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(64, 33);
+            this.btnBack.Size = new System.Drawing.Size(85, 41);
             this.btnBack.TabIndex = 47;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Review
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.btnBack);
@@ -122,8 +129,9 @@
             this.Controls.Add(this.tbReview);
             this.Controls.Add(this.trackBarRating);
             this.Controls.Add(this.btnSave);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Review";
-            this.Size = new System.Drawing.Size(351, 271);
+            this.Size = new System.Drawing.Size(468, 334);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarRating)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

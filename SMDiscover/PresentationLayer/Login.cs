@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
+using DataLayer.models;
 
 namespace PresentationLayer
 {
@@ -20,14 +22,35 @@ namespace PresentationLayer
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            f2.Show();
-        }
+            try
+            {
+                if (tbPassword.Text == "" || tbUsername.Text == "")
+                    throw new Exception("You must fill in all of the fields!");
 
-        private void btnToBeDeleted_Click(object sender, EventArgs e)
-        {
-            Form3 f3 = new Form3();
-            f3.Show();
+                UserBusiness usersBusiness = new UserBusiness();
+                foreach (User u in usersBusiness.GetAllUsers())
+                {
+                    if (u.Username == tbUsername.Text && u.Password == tbPassword.Text)
+                    {
+                        if (u.Admin == 1)
+                        {
+                            Form2 f2 = new Form2(u);
+                            f2.Show();
+                            break;
+                        }
+                        else
+                        {
+                            Form3 f3 = new Form3();
+                            f3.Show();
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
     }
 }
