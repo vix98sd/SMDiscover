@@ -36,5 +36,10 @@ namespace PresentationLayer
         {
             Review?.BringToFront();
         }
+
+        private void Shop_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
