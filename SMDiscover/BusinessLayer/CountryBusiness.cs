@@ -17,9 +17,9 @@ namespace BusinessLayer
         }
         public List<Country> GetAllCountires()
         {
-            List<Country> countries = new List<Country>();
-            return countries;
-            //return this.countriesRepository.GetAllCountires();
+            /*List<Country> countries = new List<Country>();
+            return countries;*/
+            return this.countriesRepository.getAllCountries();
         }
         // Cekam CountriesReSpository ;)
     }
