@@ -17,9 +17,22 @@ namespace BusinessLayer
         }
         public List<City> GetAllCities()
         {
-            List<City> cities = new List<City>();
-            return cities;
-         //   return this.citiesRepository.GetAllCities();
+            return this.citiesRepository.GetAllCities();
         }
+        public string InsertCity(City city)
+        {
+            if (citiesRepository.InsertCity(city) != 0)
+                return "City successfully inserted!";
+            else
+                return "City was not inserted!";
+        }
+        public string DeletetCity(string CityName)
+        {
+            if (citiesRepository.DeleteCity(CityName) != 0)
+                return "City successfully deleted!";
+            else
+                return "City was not deleted!";
+        }
+        // Cekam UpdateCity iz repozitorijuma!
     }
 }

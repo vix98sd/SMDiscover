@@ -17,10 +17,28 @@ namespace BusinessLayer
         }
         public List<Rating> GetAllRatings()
         {
-            List<Rating> ratings = new List<Rating>();
-            return ratings;
-            //return this.ratingsRepository.GetAllRatings();
-
+            return this.ratingsRepository.GetAllRatings();
+        }
+        public string InsertRating(Rating rating) 
+        {
+            if (ratingsRepository.InsertRating(rating) != 0)
+                return "Rating successfully inserted!";
+            else
+                return "Rating was not inserted!";
+        }
+        public string UpdateRating(Rating rating)
+        {
+            if (ratingsRepository.UpdateRating(rating) != 0)
+                return "Rating successfully deleted!";
+            else
+                return "Rating was not updated!";
+        }
+        public string DeleteRating(int Userid, int ShopId)
+        {
+            if (ratingsRepository.DeleteRating(Userid,ShopId) != 0)
+                return "Rating successfully deleted!";
+            else
+                return "Rating was not deleted!";
         }
     }
 }
