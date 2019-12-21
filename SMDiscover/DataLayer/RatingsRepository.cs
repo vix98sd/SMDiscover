@@ -10,7 +10,11 @@ namespace DataLayer
 {
     public class RatingsRepository
     {
-        private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        // Vanja:
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        // Laki:
+        //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public List<Rating> GetAllRatings()
         {
@@ -48,7 +52,8 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "INSERT INTO RATINGS (ID_USER, ID_SHOP, RATE, COMMENT) VALUES(" + string.Format(
-                    "'{0}', '{1}', '{2}', '{3}'", rating.UserId, rating.ShopId, rating.Rate, rating.Comment) + ")";
+                    "{0}, {1}, {2}, '{3}'", rating.UserId, rating.ShopId, rating.Rate, rating.Comment) + ")";
+
                 return sqlCommand.ExecuteNonQuery();
             }
         }

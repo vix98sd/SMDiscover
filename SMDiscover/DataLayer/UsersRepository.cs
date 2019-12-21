@@ -10,7 +10,11 @@ namespace DataLayer
 {
     public class UsersRepository
     {
-        private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        // Vanja:
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        // Laki:
+        //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public List<User> GetAllUsers()
         {
@@ -20,7 +24,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Users";
+                sqlCommand.CommandText = "SELECT * FROM USERS";
 
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
@@ -53,7 +57,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "INSERT INTO USERS (Name, Surname, Email, Password, Username, SecretQuestion, Answer, Admin) VALUES(" + string.Format(
+                sqlCommand.CommandText = "INSERT INTO USERS (NAME, SURNAME, EMAIL, PASSWORD, USERNAME, SECRETQUESTION, ANSWER, ADMIN) VALUES(" + string.Format(
                     "'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', {7}", s.Name, s.Surname, s.Email, s.Password, s.Username, s.SecretQuestion, s.Answer, s.Admin) + ")";
                 return sqlCommand.ExecuteNonQuery();
             }
@@ -67,11 +71,11 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "UPDATE USERS SET Name = '" + s.Name +
-                    "', Surname = '" + s.Surname + "', Email = " + s.Email +
-                    ", Password = '" + s.Password + "', Username = " + s.Username +
-                    "', SecretQuestion = " + s.SecretQuestion + "', Answer = " + s.Answer +
-                    "', Admin = " + s.Admin + "' WHERE Id = " + s.Id;
+                sqlCommand.CommandText = "UPDATE USERS SET NAME = '" + s.Name +
+                    "', SURNAME = '" + s.Surname + "', EMAIL = " + s.Email +
+                    ", PASSWORD = '" + s.Password + "', USERNAME = " + s.Username +
+                    "', SECRETQUESTION = " + s.SecretQuestion + "', ANSWER = " + s.Answer +
+                    "', ADMIN = " + s.Admin + "' WHERE ID = " + s.Id;
 
                 return sqlCommand.ExecuteNonQuery();
             }
@@ -85,7 +89,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "DELETE FROM USERS WHERE Id = " + id;
+                sqlCommand.CommandText = "DELETE FROM USERS WHERE ID = " + id;
 
                 return sqlCommand.ExecuteNonQuery();
             }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblWorkingHours = new System.Windows.Forms.Label();
@@ -52,18 +52,20 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.lblTitle.Location = new System.Drawing.Point(68, 14);
+            this.lblTitle.Location = new System.Drawing.Point(91, 17);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(260, 36);
+            this.lblTitle.Size = new System.Drawing.Size(332, 44);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "ShoppingMallTitle";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.panel1.Location = new System.Drawing.Point(386, 0);
+            this.panel1.Location = new System.Drawing.Point(515, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 421);
+            this.panel1.Size = new System.Drawing.Size(7, 518);
             this.panel1.TabIndex = 7;
             // 
             // lblWorkingHours
@@ -71,9 +73,10 @@
             this.lblWorkingHours.AutoSize = true;
             this.lblWorkingHours.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWorkingHours.ForeColor = System.Drawing.Color.White;
-            this.lblWorkingHours.Location = new System.Drawing.Point(9, 317);
+            this.lblWorkingHours.Location = new System.Drawing.Point(12, 390);
+            this.lblWorkingHours.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWorkingHours.Name = "lblWorkingHours";
-            this.lblWorkingHours.Size = new System.Drawing.Size(104, 22);
+            this.lblWorkingHours.Size = new System.Drawing.Size(139, 30);
             this.lblWorkingHours.TabIndex = 22;
             this.lblWorkingHours.Text = "Work time:";
             // 
@@ -82,9 +85,10 @@
             this.lblLocation.AutoSize = true;
             this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocation.ForeColor = System.Drawing.Color.White;
-            this.lblLocation.Location = new System.Drawing.Point(9, 339);
+            this.lblLocation.Location = new System.Drawing.Point(12, 417);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(95, 22);
+            this.lblLocation.Size = new System.Drawing.Size(124, 30);
             this.lblLocation.TabIndex = 23;
             this.lblLocation.Text = "Location:";
             // 
@@ -93,9 +97,10 @@
             this.lblAbout.AutoSize = true;
             this.lblAbout.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAbout.ForeColor = System.Drawing.Color.White;
-            this.lblAbout.Location = new System.Drawing.Point(9, 361);
+            this.lblAbout.Location = new System.Drawing.Point(12, 444);
+            this.lblAbout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(74, 22);
+            this.lblAbout.Size = new System.Drawing.Size(92, 30);
             this.lblAbout.TabIndex = 24;
             this.lblAbout.Text = "About:";
             // 
@@ -104,9 +109,10 @@
             this.lblValue1.AutoEllipsis = true;
             this.lblValue1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue1.ForeColor = System.Drawing.Color.White;
-            this.lblValue1.Location = new System.Drawing.Point(120, 317);
+            this.lblValue1.Location = new System.Drawing.Point(160, 390);
+            this.lblValue1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValue1.Name = "lblValue1";
-            this.lblValue1.Size = new System.Drawing.Size(249, 22);
+            this.lblValue1.Size = new System.Drawing.Size(332, 27);
             this.lblValue1.TabIndex = 25;
             this.lblValue1.Text = "00-24";
             // 
@@ -115,9 +121,10 @@
             this.lblValue2.AutoEllipsis = true;
             this.lblValue2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue2.ForeColor = System.Drawing.Color.White;
-            this.lblValue2.Location = new System.Drawing.Point(120, 339);
+            this.lblValue2.Location = new System.Drawing.Point(160, 417);
+            this.lblValue2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValue2.Name = "lblValue2";
-            this.lblValue2.Size = new System.Drawing.Size(249, 22);
+            this.lblValue2.Size = new System.Drawing.Size(332, 27);
             this.lblValue2.TabIndex = 26;
             this.lblValue2.Text = "Address";
             // 
@@ -126,9 +133,10 @@
             this.lblValue3.AutoEllipsis = true;
             this.lblValue3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue3.ForeColor = System.Drawing.Color.White;
-            this.lblValue3.Location = new System.Drawing.Point(120, 361);
+            this.lblValue3.Location = new System.Drawing.Point(160, 444);
+            this.lblValue3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValue3.Name = "lblValue3";
-            this.lblValue3.Size = new System.Drawing.Size(249, 48);
+            this.lblValue3.Size = new System.Drawing.Size(332, 59);
             this.lblValue3.TabIndex = 27;
             this.lblValue3.Text = "Details about mall";
             // 
@@ -141,15 +149,16 @@
             this.lvShops.ForeColor = System.Drawing.Color.White;
             this.lvShops.FullRowSelect = true;
             this.lvShops.HideSelection = false;
-            listViewItem9.IndentCount = 124;
+            listViewItem1.IndentCount = 124;
             this.lvShops.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12});
-            this.lvShops.Location = new System.Drawing.Point(405, 14);
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
+            this.lvShops.Location = new System.Drawing.Point(540, 17);
+            this.lvShops.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvShops.Name = "lvShops";
-            this.lvShops.Size = new System.Drawing.Size(351, 395);
+            this.lvShops.Size = new System.Drawing.Size(468, 486);
             this.lvShops.TabIndex = 38;
             this.lvShops.UseCompatibleStateImageBehavior = false;
             // 
@@ -161,9 +170,10 @@
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = global::PresentationLayer.Properties.Resources.back;
-            this.btnBack.Location = new System.Drawing.Point(3, 14);
+            this.btnBack.Location = new System.Drawing.Point(4, 17);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(64, 33);
+            this.btnBack.Size = new System.Drawing.Size(85, 41);
             this.btnBack.TabIndex = 39;
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnRecovery_Click);
@@ -171,18 +181,20 @@
             // pbMall
             // 
             this.pbMall.Image = global::PresentationLayer.Properties.Resources.PROMENADA_2_PROMO;
-            this.pbMall.Location = new System.Drawing.Point(13, 68);
+            this.pbMall.Location = new System.Drawing.Point(17, 84);
+            this.pbMall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbMall.Name = "pbMall";
-            this.pbMall.Size = new System.Drawing.Size(356, 235);
+            this.pbMall.Size = new System.Drawing.Size(475, 289);
             this.pbMall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMall.TabIndex = 9;
             this.pbMall.TabStop = false;
             // 
             // btnToBeRemoved
             // 
-            this.btnToBeRemoved.Location = new System.Drawing.Point(13, 386);
+            this.btnToBeRemoved.Location = new System.Drawing.Point(17, 475);
+            this.btnToBeRemoved.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnToBeRemoved.Name = "btnToBeRemoved";
-            this.btnToBeRemoved.Size = new System.Drawing.Size(56, 23);
+            this.btnToBeRemoved.Size = new System.Drawing.Size(75, 28);
             this.btnToBeRemoved.TabIndex = 40;
             this.btnToBeRemoved.Text = "Test";
             this.btnToBeRemoved.UseVisualStyleBackColor = true;
@@ -190,7 +202,7 @@
             // 
             // ShoppingMall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.btnToBeRemoved);
@@ -205,8 +217,10 @@
             this.Controls.Add(this.pbMall);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ShoppingMall";
-            this.Size = new System.Drawing.Size(771, 422);
+            this.Size = new System.Drawing.Size(1028, 519);
+            this.Load += new System.EventHandler(this.ShoppingMall_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbMall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

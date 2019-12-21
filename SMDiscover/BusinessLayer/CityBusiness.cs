@@ -26,13 +26,7 @@ namespace BusinessLayer
             else
                 return "City was not inserted!";
         }
-        public string DeletetCity(string CityName)
-        {
-            if (citiesRepository.DeleteCity(CityName) != 0)
-                return "City successfully deleted!";
-            else
-                return "City was not deleted!";
-        }
+        
         // Cekam UpdateCity iz repozitorijuma!
     }
 }

@@ -12,8 +12,10 @@ namespace BusinessLayer
     {
         public List<Shop> GetAllShops()
         {
-            List<Shop> allShops = new List<Shop>(); // Zameniti sa pozivom fje iz DataLayera, kad bude gotova
-            return allShops;       
+            /*List<Shop> allShops = new List<Shop>(); // Zameniti sa pozivom fje iz DataLayera, kad bude gotova
+            return allShops;*/
+            ShopsRepository shopsRepository = new ShopsRepository();
+            return shopsRepository.GetAllShops();
         }
 
         public string InsertShop(Shop shop)

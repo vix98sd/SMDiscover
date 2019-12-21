@@ -10,9 +10,11 @@ namespace DataLayer
 {
     public class SMShopsRepository
     {
-        public class CitiesRepository
-        {
-            private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            // Vanja:
+            private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            // Laki:
+            //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             public List<SMShop> GetAllSMShops()
             {
@@ -22,7 +24,7 @@ namespace DataLayer
 
                     SqlCommand sqlCommand = new SqlCommand();
                     sqlCommand.Connection = sqlConnection;
-                    sqlCommand.CommandText = "SELECT * FROM SM_SHOPS";
+                    sqlCommand.CommandText = "SELECT * FROM SM_SHOP";
 
                     SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
@@ -49,7 +51,7 @@ namespace DataLayer
                     SqlCommand sqlCommand = new SqlCommand();
                     sqlCommand.Connection = sqlConnection;
                     sqlCommand.CommandText = "INSERT INTO SM_SHOP (ID_SM, ID_Shop) VALUES(" + string.Format(
-                        "'{0}', '{1}'", sMShop.SMId, sMShop.ShopId) + ")";
+                        "{0}, {1}", sMShop.SMId, sMShop.ShopId) + ")";
                     return sqlCommand.ExecuteNonQuery();
                 }
             }
@@ -67,6 +69,5 @@ namespace DataLayer
                     return sqlCommand.ExecuteNonQuery();
                 }
             }
-        }
     }
 }
