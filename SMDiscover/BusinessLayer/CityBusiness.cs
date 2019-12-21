@@ -10,14 +10,16 @@ namespace BusinessLayer
 {
     public class CityBusiness
     {
-	private CitiesRepository CitiesRepository;
+	private CitiesRepository citiesRepository;
         public CityBusiness()
         {
             this.citiesRepository = new CitiesRepository();
         }
         public List<City> GetAllCities()
         {
-            return this.citiesRepository.GetAllCities();
+            List<City> cities = new List<City>();
+            return cities;
+         //   return this.citiesRepository.GetAllCities();
         }
     }
 }

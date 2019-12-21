@@ -11,13 +11,16 @@ namespace BusinessLayer
     public class RatingBusiness
     {
         private RatingsRepository ratingsRepository;
-        public CountriesBusiness()
+        public RatingBusiness()
         {
             this.ratingsRepository = new RatingsRepository();
         }
         public List<Rating> GetAllRatings()
         {
-            return this.ratingsRepository.GetAllRatings();
+            List<Rating> ratings = new List<Rating>();
+            return ratings;
+            //return this.ratingsRepository.GetAllRatings();
+
         }
     }
 }
