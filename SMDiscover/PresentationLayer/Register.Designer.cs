@@ -54,9 +54,10 @@
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.lblRegister.Location = new System.Drawing.Point(68, 38);
+            this.lblRegister.Location = new System.Drawing.Point(91, 47);
+            this.lblRegister.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRegister.Name = "lblRegister";
-            this.lblRegister.Size = new System.Drawing.Size(127, 36);
+            this.lblRegister.Size = new System.Drawing.Size(161, 44);
             this.lblRegister.TabIndex = 5;
             this.lblRegister.Text = "Register";
             // 
@@ -65,9 +66,10 @@
             this.lblCookies.AutoSize = true;
             this.lblCookies.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCookies.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.lblCookies.Location = new System.Drawing.Point(255, 301);
+            this.lblCookies.Location = new System.Drawing.Point(340, 370);
+            this.lblCookies.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCookies.Name = "lblCookies";
-            this.lblCookies.Size = new System.Drawing.Size(252, 22);
+            this.lblCookies.Size = new System.Drawing.Size(336, 30);
             this.lblCookies.TabIndex = 11;
             this.lblCookies.Text = "Come.. we have cookies..!";
             // 
@@ -76,9 +78,10 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(70, 120);
+            this.lblName.Location = new System.Drawing.Point(93, 148);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(66, 22);
+            this.lblName.Size = new System.Drawing.Size(87, 30);
             this.lblName.TabIndex = 15;
             this.lblName.Text = "Name";
             // 
@@ -87,9 +90,10 @@
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSurname.ForeColor = System.Drawing.Color.White;
-            this.lblSurname.Location = new System.Drawing.Point(70, 162);
+            this.lblSurname.Location = new System.Drawing.Point(93, 199);
+            this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(91, 22);
+            this.lblSurname.Size = new System.Drawing.Size(118, 30);
             this.lblSurname.TabIndex = 16;
             this.lblSurname.Text = "Surname";
             // 
@@ -98,9 +102,10 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(70, 201);
+            this.lblEmail.Location = new System.Drawing.Point(93, 247);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 22);
+            this.lblEmail.Size = new System.Drawing.Size(86, 30);
             this.lblEmail.TabIndex = 17;
             this.lblEmail.Text = "E-mail";
             // 
@@ -109,9 +114,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(70, 236);
+            this.lblUsername.Location = new System.Drawing.Point(93, 290);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(101, 22);
+            this.lblUsername.Size = new System.Drawing.Size(133, 30);
             this.lblUsername.TabIndex = 18;
             this.lblUsername.Text = "Username";
             // 
@@ -120,9 +126,10 @@
             this.lblConfirm.AutoSize = true;
             this.lblConfirm.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirm.ForeColor = System.Drawing.Color.White;
-            this.lblConfirm.Location = new System.Drawing.Point(361, 162);
+            this.lblConfirm.Location = new System.Drawing.Point(481, 199);
+            this.lblConfirm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblConfirm.Name = "lblConfirm";
-            this.lblConfirm.Size = new System.Drawing.Size(81, 22);
+            this.lblConfirm.Size = new System.Drawing.Size(109, 30);
             this.lblConfirm.TabIndex = 19;
             this.lblConfirm.Text = "Confirm";
             // 
@@ -131,9 +138,10 @@
             this.lblSecQuestion.AutoSize = true;
             this.lblSecQuestion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecQuestion.ForeColor = System.Drawing.Color.White;
-            this.lblSecQuestion.Location = new System.Drawing.Point(361, 201);
+            this.lblSecQuestion.Location = new System.Drawing.Point(481, 247);
+            this.lblSecQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSecQuestion.Name = "lblSecQuestion";
-            this.lblSecQuestion.Size = new System.Drawing.Size(125, 22);
+            this.lblSecQuestion.Size = new System.Drawing.Size(164, 30);
             this.lblSecQuestion.TabIndex = 20;
             this.lblSecQuestion.Text = "SecQuestion";
             // 
@@ -142,9 +150,10 @@
             this.lblAnswer.AutoSize = true;
             this.lblAnswer.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnswer.ForeColor = System.Drawing.Color.White;
-            this.lblAnswer.Location = new System.Drawing.Point(361, 236);
+            this.lblAnswer.Location = new System.Drawing.Point(481, 290);
+            this.lblAnswer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(78, 22);
+            this.lblAnswer.Size = new System.Drawing.Size(98, 30);
             this.lblAnswer.TabIndex = 21;
             this.lblAnswer.Text = "Answer";
             // 
@@ -153,9 +162,10 @@
             this.tbName.BackColor = System.Drawing.SystemColors.Window;
             this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(172, 123);
+            this.tbName.Location = new System.Drawing.Point(229, 151);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(159, 19);
+            this.tbName.Size = new System.Drawing.Size(212, 23);
             this.tbName.TabIndex = 22;
             this.tbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -164,9 +174,10 @@
             this.tbSurname.BackColor = System.Drawing.SystemColors.Window;
             this.tbSurname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSurname.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSurname.Location = new System.Drawing.Point(172, 165);
+            this.tbSurname.Location = new System.Drawing.Point(229, 203);
+            this.tbSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbSurname.Name = "tbSurname";
-            this.tbSurname.Size = new System.Drawing.Size(159, 19);
+            this.tbSurname.Size = new System.Drawing.Size(212, 23);
             this.tbSurname.TabIndex = 23;
             this.tbSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -175,9 +186,10 @@
             this.tbEmail.BackColor = System.Drawing.SystemColors.Window;
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbEmail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbEmail.Location = new System.Drawing.Point(172, 204);
+            this.tbEmail.Location = new System.Drawing.Point(229, 251);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(159, 19);
+            this.tbEmail.Size = new System.Drawing.Size(212, 23);
             this.tbEmail.TabIndex = 24;
             this.tbEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -186,10 +198,11 @@
             this.tbConfirm.BackColor = System.Drawing.SystemColors.Window;
             this.tbConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbConfirm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirm.Location = new System.Drawing.Point(494, 165);
+            this.tbConfirm.Location = new System.Drawing.Point(659, 203);
+            this.tbConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbConfirm.Name = "tbConfirm";
             this.tbConfirm.PasswordChar = '*';
-            this.tbConfirm.Size = new System.Drawing.Size(180, 19);
+            this.tbConfirm.Size = new System.Drawing.Size(240, 23);
             this.tbConfirm.TabIndex = 25;
             this.tbConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -198,9 +211,10 @@
             this.tbAnswer.BackColor = System.Drawing.SystemColors.Window;
             this.tbAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAnswer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAnswer.Location = new System.Drawing.Point(494, 239);
+            this.tbAnswer.Location = new System.Drawing.Point(659, 294);
+            this.tbAnswer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbAnswer.Name = "tbAnswer";
-            this.tbAnswer.Size = new System.Drawing.Size(180, 19);
+            this.tbAnswer.Size = new System.Drawing.Size(240, 23);
             this.tbAnswer.TabIndex = 26;
             this.tbAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -209,10 +223,11 @@
             this.tbUsername.BackColor = System.Drawing.SystemColors.Window;
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(172, 239);
+            this.tbUsername.Location = new System.Drawing.Point(229, 294);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbUsername.Size = new System.Drawing.Size(159, 19);
+            this.tbUsername.Size = new System.Drawing.Size(212, 23);
             this.tbUsername.TabIndex = 27;
             this.tbUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -220,20 +235,30 @@
             // 
             this.cbSecQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbSecQuestion.FormattingEnabled = true;
-            this.cbSecQuestion.Location = new System.Drawing.Point(494, 201);
+            this.cbSecQuestion.Items.AddRange(new object[] {
+            "What Is your favorite book?",
+            "What was the name of your first/current/favorite pet?",
+            "Where did you go to high school/college?",
+            "What city were you born in?",
+            "What was your favorite sport in high school?",
+            "What is your favorite movie?"});
+            this.cbSecQuestion.Location = new System.Drawing.Point(659, 247);
+            this.cbSecQuestion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbSecQuestion.Name = "cbSecQuestion";
-            this.cbSecQuestion.Size = new System.Drawing.Size(180, 21);
+            this.cbSecQuestion.Size = new System.Drawing.Size(239, 24);
             this.cbSecQuestion.TabIndex = 28;
+            this.cbSecQuestion.SelectedIndexChanged += new System.EventHandler(this.cbSecQuestion_SelectedIndexChanged);
             // 
             // tbPassword
             // 
             this.tbPassword.BackColor = System.Drawing.SystemColors.Window;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(494, 123);
+            this.tbPassword.Location = new System.Drawing.Point(659, 151);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
-            this.tbPassword.Size = new System.Drawing.Size(180, 19);
+            this.tbPassword.Size = new System.Drawing.Size(240, 23);
             this.tbPassword.TabIndex = 30;
             this.tbPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -242,9 +267,10 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(361, 120);
+            this.lblPassword.Location = new System.Drawing.Point(481, 148);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(95, 22);
+            this.lblPassword.Size = new System.Drawing.Size(122, 30);
             this.lblPassword.TabIndex = 29;
             this.lblPassword.Text = "Password";
             // 
@@ -256,15 +282,17 @@
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
             this.btnRegister.Image = global::PresentationLayer.Properties.Resources.cookie_32px;
-            this.btnRegister.Location = new System.Drawing.Point(341, 326);
+            this.btnRegister.Location = new System.Drawing.Point(455, 401);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(85, 33);
+            this.btnRegister.Size = new System.Drawing.Size(113, 41);
             this.btnRegister.TabIndex = 14;
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.tbPassword);
@@ -286,8 +314,9 @@
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblCookies);
             this.Controls.Add(this.lblRegister);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Register";
-            this.Size = new System.Drawing.Size(771, 422);
+            this.Size = new System.Drawing.Size(1028, 519);
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
