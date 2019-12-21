@@ -105,8 +105,7 @@ namespace PresentationLayer
                 }
 
             }
-            /*
-            for(int i = 0; i < 3; i++)
+            /*for(int i = 0; i < 3; i++)
             lvDiscover.Items.Add("TEST 1 TEST 1 " + i);*/
         }
     }
