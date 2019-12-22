@@ -47,6 +47,7 @@ namespace PresentationLayer
                         ShoppingMall.mall = mall;
                 }
 
+                ShoppingMall.SetContent();
                 ShoppingMall?.BringToFront();
             }
         }

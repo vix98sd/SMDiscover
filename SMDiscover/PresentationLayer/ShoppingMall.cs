@@ -41,12 +41,17 @@ namespace PresentationLayer
 
         private void ShoppingMall_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        public void SetContent()
+        {
             lblTitle.Text = mall.Name;
             lblValue1.Text = mall.HoursO + " - " + mall.HoursC;
             lblValue2.Text = mall.Address;
             lblValue3.Text = mall.About;
 
-            foreach(DataLayer.models.Shop shop in mall.Shops)
+            foreach (DataLayer.models.Shop shop in mall.Shops)
             {
                 lvShops.Items.Add(shop.Name);
             }
