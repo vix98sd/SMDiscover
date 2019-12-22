@@ -37,6 +37,8 @@ namespace DataLayer
                         sMShop.No = sqlDataReader.GetInt32(0);
                         sMShop.SMId = sqlDataReader.GetInt32(1);
                         sMShop.ShopId = sqlDataReader.GetInt32(2);
+
+                        listToReturn.Add(sMShop);
                     }
 
                     return listToReturn;
