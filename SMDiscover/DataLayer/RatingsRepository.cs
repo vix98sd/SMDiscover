@@ -69,7 +69,7 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "UPDATE RATINGS SET RATE = '" + rating.Rate +
-                    "', COMMENT = '" + rating.Comment + "' WHERE ID_USER = " + rating.UserId + " AND ID_SHOP" + rating.ShopId;
+                    "', COMMENT = '" + rating.Comment + "' WHERE ID_USER = " + rating.UserId + " AND ID_SHOP = " + rating.ShopId;
 
                 return sqlCommand.ExecuteNonQuery();
             }
