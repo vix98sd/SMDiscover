@@ -58,6 +58,8 @@ namespace PresentationLayer
 
                 UserBusiness userBusiness = new UserBusiness();
                 userBusiness.InsertUser(user);
+
+                MessageBox.Show("You've been registered successfully!");
             }
             catch (Exception exception)
             {
@@ -69,6 +71,18 @@ namespace PresentationLayer
         private void cbSecQuestion_SelectedIndexChanged(object sender, EventArgs e)
         {
             tbAnswer.Text = "";
+        }
+
+        public void clearRegisterForm()
+        {
+            tbName.Text = "";
+            tbSurname.Text = "";
+            tbEmail.Text = "";
+            tbPassword.Text = "";
+            tbConfirm.Text = "";
+            tbUsername.Text = "";
+            tbAnswer.Text = "";
+            cbSecQuestion.SelectedIndex = -1;
         }
     }
 }

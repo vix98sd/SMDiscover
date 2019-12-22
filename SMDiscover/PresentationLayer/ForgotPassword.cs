@@ -45,7 +45,8 @@ namespace PresentationLayer
                     }
                 }
                 if (!found)
-                    MessageBox.Show("There is no account with the given field values!");
+                    throw new Exception("There is no account with the given field values!");
+                clearRecoveryForm();
             }
             catch (Exception exception)
             {
@@ -53,11 +54,18 @@ namespace PresentationLayer
             }
 
         }
-        public static string RandomPasswd()
+        private static string RandomPasswd()
         {
             Random random = new Random();
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, 8).Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        public void clearRecoveryForm()
+        {
+            tbEmail.Text = "";
+            tbAnswer.Text = "";
+            cbSecQuestion.SelectedIndex = -1;
         }
     }
 }

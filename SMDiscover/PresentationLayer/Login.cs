@@ -27,23 +27,33 @@ namespace PresentationLayer
                 if (tbPassword.Text == "" || tbUsername.Text == "")
                     throw new Exception("You must fill in all of the fields!");
 
+                bool found = false;
                 UserBusiness usersBusiness = new UserBusiness();
                 foreach (User u in usersBusiness.GetAllUsers())
                 {
-                    if (u.Username == tbUsername.Text && u.Password == tbPassword.Text)
+                    if (u.Username == tbUsername.Text)
                     {
-                        if (u.Admin == 0)
+                        if (u.Password == tbPassword.Text)
                         {
-                            Form2 f2 = new Form2(u);
-                            f2.Show();
+                            clearLoginForm();
+                            found = true;
+                            if (u.Admin == 0)
+                            {
+                                Form2 f2 = new Form2(u);
+                                f2.Show(); 
+                            }
+                            else
+                            {
+                                Form3 f3 = new Form3();
+                                f3.Show();
+                            }
                         }
                         else
-                        {
-                            Form3 f3 = new Form3();
-                            f3.Show();
-                        }
+                            throw new Exception("Wrong password!");
                     }
                 }
+                if (!found)
+                    throw new Exception("Wrong username!");
             }
             catch (Exception exception)
             {
@@ -54,6 +64,12 @@ namespace PresentationLayer
         private void lblFindMall_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void clearLoginForm()
+        {
+            tbPassword.Text = "";
+            tbUsername.Text = "";
         }
     }
 }

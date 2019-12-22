@@ -27,7 +27,8 @@ namespace PresentationLayer
             SidePanel.Height = btnLogin.Height;
             SidePanel.Top = btnLogin.Top;
             login1.BringToFront();
-
+            register1.clearRegisterForm();
+            forgotPassword1.clearRecoveryForm();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -35,7 +36,8 @@ namespace PresentationLayer
             SidePanel.Height = btnRegister.Height;
             SidePanel.Top = btnRegister.Top;
             register1.BringToFront();
-
+            login1.clearLoginForm();
+            forgotPassword1.clearRecoveryForm();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -48,6 +50,8 @@ namespace PresentationLayer
             SidePanel.Height = btnForgotPassword.Height;
             SidePanel.Top = btnForgotPassword.Top;
             forgotPassword1.BringToFront();
+            register1.clearRegisterForm();
+            login1.clearLoginForm();
         }
 
 
