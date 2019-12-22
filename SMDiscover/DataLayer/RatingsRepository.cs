@@ -38,6 +38,8 @@ namespace DataLayer
                     rating.ShopId = sqlDataReader.GetInt32(1);
                     rating.Rate = sqlDataReader.GetInt32(2);
                     rating.Comment = sqlDataReader.GetString(3);
+
+                    listToReturn.Add(rating);
                 }
 
                 return listToReturn;
