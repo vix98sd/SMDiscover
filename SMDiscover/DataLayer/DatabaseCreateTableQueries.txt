@@ -1,12 +1,13 @@
-﻿CREATE TABLE [dbo].[CITIES] (
-    [CityName]    NVARCHAR (50) NOT NULL,
-    [CountryName] NVARCHAR (50) NOT NULL,
-    CONSTRAINT [PK_Cities] PRIMARY KEY CLUSTERED ([CountryName] ASC, [CityName] ASC),
-    CONSTRAINT [FK_City_Country] FOREIGN KEY ([CountryName]) REFERENCES [dbo].[COUNTRIES] ([CountryName])
-);
+﻿BEGIN
 CREATE TABLE [dbo].[COUNTRIES] (
     [CountryName] NVARCHAR (50) NOT NULL,
     CONSTRAINT [PK_Countries] PRIMARY KEY CLUSTERED ([CountryName] ASC)
+);
+CREATE TABLE [dbo].[CITIES] (
+    [CityName]    NVARCHAR (50) NOT NULL,
+    [CountryName] NVARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY CLUSTERED ([CountryName] ASC, [CityName] ASC),
+    CONSTRAINT [FK_City_Country] FOREIGN KEY ([CountryName]) REFERENCES [COUNTRIES] ([CountryName])
 );
 CREATE TABLE [dbo].[USERS] (
     [ID_User]        INT           IDENTITY (1, 1) NOT NULL,
@@ -61,3 +62,4 @@ CREATE TABLE [dbo].[RATINGS] (
     CONSTRAINT [FK_Rating_User] FOREIGN KEY ([ID_User]) REFERENCES [dbo].[USERS] ([ID_User]),
     CONSTRAINT [FK_Rating_Shop] FOREIGN KEY ([ID_Shop]) REFERENCES [dbo].[SHOPS] ([ID_Shop])
 );
+END

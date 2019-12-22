@@ -44,10 +44,9 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.lblLogin.Location = new System.Drawing.Point(91, 47);
-            this.lblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLogin.Location = new System.Drawing.Point(68, 38);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(116, 44);
+            this.lblLogin.Size = new System.Drawing.Size(91, 36);
             this.lblLogin.TabIndex = 4;
             this.lblLogin.Text = "LogIn";
             // 
@@ -56,10 +55,9 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(91, 182);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(68, 148);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(133, 30);
+            this.lblUsername.Size = new System.Drawing.Size(101, 22);
             this.lblUsername.TabIndex = 8;
             this.lblUsername.Text = "Username";
             // 
@@ -68,10 +66,9 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(91, 260);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(68, 211);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(122, 30);
+            this.lblPassword.Size = new System.Drawing.Size(95, 22);
             this.lblPassword.TabIndex = 9;
             this.lblPassword.Text = "Password";
             // 
@@ -80,22 +77,21 @@
             this.lblFindMall.AutoSize = true;
             this.lblFindMall.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFindMall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.lblFindMall.Location = new System.Drawing.Point(340, 370);
-            this.lblFindMall.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFindMall.Location = new System.Drawing.Point(255, 301);
             this.lblFindMall.Name = "lblFindMall";
-            this.lblFindMall.Size = new System.Drawing.Size(383, 30);
+            this.lblFindMall.Size = new System.Drawing.Size(290, 22);
             this.lblFindMall.TabIndex = 10;
             this.lblFindMall.Text = "Find a mall that fits your needs!";
+            this.lblFindMall.Click += new System.EventHandler(this.lblFindMall_Click);
             // 
             // tbUsername
             // 
             this.tbUsername.BackColor = System.Drawing.SystemColors.Window;
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(233, 186);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUsername.Location = new System.Drawing.Point(175, 151);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(275, 23);
+            this.tbUsername.Size = new System.Drawing.Size(206, 19);
             this.tbUsername.TabIndex = 11;
             this.tbUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -104,22 +100,20 @@
             this.tbPassword.BackColor = System.Drawing.SystemColors.Window;
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPassword.Location = new System.Drawing.Point(233, 263);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Location = new System.Drawing.Point(175, 214);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PasswordChar = '*';
             this.tbPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tbPassword.Size = new System.Drawing.Size(275, 23);
+            this.tbPassword.Size = new System.Drawing.Size(206, 19);
             this.tbPassword.TabIndex = 12;
             this.tbPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pbUsers
             // 
             this.pbUsers.Image = global::PresentationLayer.Properties.Resources.users;
-            this.pbUsers.Location = new System.Drawing.Point(707, 154);
-            this.pbUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbUsers.Location = new System.Drawing.Point(530, 125);
             this.pbUsers.Name = "pbUsers";
-            this.pbUsers.Size = new System.Drawing.Size(183, 161);
+            this.pbUsers.Size = new System.Drawing.Size(137, 131);
             this.pbUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUsers.TabIndex = 14;
             this.pbUsers.TabStop = false;
@@ -132,17 +126,16 @@
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Image = global::PresentationLayer.Properties.Resources.loginbtn;
-            this.btnLogin.Location = new System.Drawing.Point(312, 294);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(234, 239);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(113, 41);
+            this.btnLogin.Size = new System.Drawing.Size(85, 33);
             this.btnLogin.TabIndex = 13;
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.Controls.Add(this.pbUsers);
@@ -153,9 +146,8 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblLogin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
-            this.Size = new System.Drawing.Size(1028, 519);
+            this.Size = new System.Drawing.Size(771, 422);
             ((System.ComponentModel.ISupportInitialize)(this.pbUsers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

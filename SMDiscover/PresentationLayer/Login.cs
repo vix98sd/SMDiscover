@@ -32,17 +32,15 @@ namespace PresentationLayer
                 {
                     if (u.Username == tbUsername.Text && u.Password == tbPassword.Text)
                     {
-                        if (u.Admin == 1)
+                        if (u.Admin == 0)
                         {
                             Form2 f2 = new Form2(u);
                             f2.Show();
-                            break;
                         }
                         else
                         {
                             Form3 f3 = new Form3();
                             f3.Show();
-                            break;
                         }
                     }
                 }
@@ -51,6 +49,11 @@ namespace PresentationLayer
             {
                 MessageBox.Show(exception.Message);
             }
+        }
+
+        private void lblFindMall_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

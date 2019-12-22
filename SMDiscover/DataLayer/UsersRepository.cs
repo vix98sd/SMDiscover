@@ -11,7 +11,7 @@ namespace DataLayer
     public class UsersRepository
     {
         // Vanja:
-        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBaseSMD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         // Laki:
         //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
@@ -72,10 +72,10 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "UPDATE USERS SET NAME = '" + s.Name +
-                    "', SURNAME = '" + s.Surname + "', EMAIL = " + s.Email +
-                    ", PASSWORD = '" + s.Password + "', USERNAME = " + s.Username +
-                    "', SECRETQUESTION = " + s.SecretQuestion + "', ANSWER = " + s.Answer +
-                    "', ADMIN = " + s.Admin + "' WHERE ID = " + s.Id;
+                    "', SURNAME = '" + s.Surname + "', EMAIL = '" + s.Email +
+                    "', PASSWORD = '" + s.Password + "', USERNAME = '" + s.Username +
+                    "', SECRETQUESTION = '" + s.SecretQuestion + "', ANSWER = '" + s.Answer +
+                    "', ADMIN = '" + s.Admin + "' WHERE ID_USER = " + s.Id + ";";
 
                 return sqlCommand.ExecuteNonQuery();
             }
