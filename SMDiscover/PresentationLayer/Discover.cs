@@ -40,7 +40,6 @@ namespace PresentationLayer
         {
             if(lvDiscover.FocusedItem != null)
             {
-                lblDiscover.Text = lvDiscover.FocusedItem.Text;
                 foreach(DataLayer.models.ShoppingMall mall in mallsInCity)
                 {
                     if (mall.Name == lvDiscover.FocusedItem.Text)
@@ -96,7 +95,8 @@ namespace PresentationLayer
         private void cbTown_SelectedIndexChanged(object sender, EventArgs e)
         {
             mallsInCity.Clear();
-            
+            lvDiscover.Items.Clear();
+
             foreach (DataLayer.models.ShoppingMall mall in malls)
             {
                 if (mall.City.CityName == cbTown.Text && mall.City.Country.Name == cbCountry.Text)

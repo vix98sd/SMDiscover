@@ -36,7 +36,14 @@ namespace PresentationLayer
 
         private void btnToBeRemoved_Click(object sender, EventArgs e)
         {
-            Shop?.BringToFront();
+            if(lvShops.FocusedItem != null)
+            {
+                foreach (DataLayer.models.Shop shop in mall.Shops)
+                    if (shop.Name == lvShops.FocusedItem.Text)
+                        Shop.shop = shop;
+                Shop.SetContent();
+                Shop?.BringToFront();
+            }
         }
 
         private void ShoppingMall_Load(object sender, EventArgs e)
@@ -51,6 +58,7 @@ namespace PresentationLayer
             lblValue2.Text = mall.Address;
             lblValue3.Text = mall.About;
 
+            lvShops.Items.Clear();
             foreach (DataLayer.models.Shop shop in mall.Shops)
             {
                 lvShops.Items.Add(shop.Name);

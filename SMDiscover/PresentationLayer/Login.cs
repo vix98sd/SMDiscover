@@ -44,7 +44,7 @@ namespace PresentationLayer
                             }
                             else
                             {
-                                Form3 f3 = new Form3();
+                                Form3 f3 = new Form3(u);
                                 f3.Show();
                             }
                         }

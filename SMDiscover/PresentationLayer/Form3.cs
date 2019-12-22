@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace PresentationLayer
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        public Form3(User user)
         {
             InitializeComponent();
             SidePanel.Height = btnDiscover.Height;
@@ -26,6 +27,7 @@ namespace PresentationLayer
             shop1.Review = review1;
             review1.Shop = shop1;
 
+            discover1.ShoppingMall.Shop.Review.User = user;
         }
 
         private void button1_Click(object sender, EventArgs e)
