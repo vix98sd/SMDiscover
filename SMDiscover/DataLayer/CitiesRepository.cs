@@ -35,6 +35,7 @@ namespace DataLayer
 
                     city.CityName = sqlDataReader.GetString(0);
                     city.Country.Name = sqlDataReader.GetString(1);
+                    listToReturn.Add(city);
 
                 }
 
