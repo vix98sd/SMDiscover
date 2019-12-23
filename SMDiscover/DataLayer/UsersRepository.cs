@@ -11,10 +11,13 @@ namespace DataLayer
     public class UsersRepository
     {
         // Vanja:
-        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBaseSMD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        //private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBaseSMD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         // Laki:
         //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        // Miki:
+        private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscover;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public List<User> GetAllUsers()
         {
@@ -89,7 +92,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "DELETE FROM USERS WHERE ID = " + id;
+                sqlCommand.CommandText = "DELETE FROM USERS WHERE ID_USER = " + id;
 
                 return sqlCommand.ExecuteNonQuery();
             }
