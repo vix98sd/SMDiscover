@@ -85,10 +85,15 @@
             // 
             // lbDiscover
             // 
+            this.lbDiscover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.lbDiscover.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbDiscover.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiscover.ForeColor = System.Drawing.Color.White;
             this.lbDiscover.FormattingEnabled = true;
-            this.lbDiscover.Location = new System.Drawing.Point(131, 106);
+            this.lbDiscover.ItemHeight = 21;
+            this.lbDiscover.Location = new System.Drawing.Point(87, 106);
             this.lbDiscover.Name = "lbDiscover";
-            this.lbDiscover.Size = new System.Drawing.Size(484, 251);
+            this.lbDiscover.Size = new System.Drawing.Size(592, 231);
             this.lbDiscover.TabIndex = 39;
             this.lbDiscover.DoubleClick += new System.EventHandler(this.btnSearch_Click);
             // 

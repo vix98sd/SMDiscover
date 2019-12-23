@@ -154,10 +154,15 @@
             // 
             // lbShops
             // 
+            this.lbShops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.lbShops.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbShops.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lbShops.ForeColor = System.Drawing.Color.White;
             this.lbShops.FormattingEnabled = true;
-            this.lbShops.Location = new System.Drawing.Point(397, 12);
+            this.lbShops.ItemHeight = 21;
+            this.lbShops.Location = new System.Drawing.Point(397, 33);
             this.lbShops.Name = "lbShops";
-            this.lbShops.Size = new System.Drawing.Size(357, 394);
+            this.lbShops.Size = new System.Drawing.Size(357, 357);
             this.lbShops.TabIndex = 41;
             this.lbShops.DoubleClick += new System.EventHandler(this.lbShops_DoubleClick);
             // 
