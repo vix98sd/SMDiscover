@@ -58,12 +58,12 @@ namespace PresentationLayer
             int counter = 0;
             RatingBusiness ratingBusiness = new RatingBusiness();
 
-            lvReviews.Items.Clear();
+            lbReviews.Items.Clear();
             foreach(Rating rating in ratingBusiness.GetAllRatings())
             {
                 if(rating.ShopId == shop.Id)
                 {
-                    lvReviews.Items.Add("Rate: " + rating.Rate + " Comment: " + rating.Comment);
+                    lbReviews.Items.Add("Rate: " + rating.Rate + " -> Comment: " + rating.Comment);
                     sv += rating.Rate;
                     counter++;
                 }

@@ -28,22 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("");
             this.lblShop = new System.Windows.Forms.Label();
             this.lblValue2 = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
             this.lblAbout = new System.Windows.Forms.Label();
             this.lblValue3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lvReviews = new System.Windows.Forms.ListView();
             this.lblReviews = new System.Windows.Forms.Label();
             this.lblAV = new System.Windows.Forms.Label();
             this.btnRate = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.pbShop = new System.Windows.Forms.PictureBox();
+            this.lbReviews = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbShop)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,27 +106,6 @@
             this.panel1.Size = new System.Drawing.Size(5, 421);
             this.panel1.TabIndex = 31;
             // 
-            // lvReviews
-            // 
-            this.lvReviews.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.lvReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.lvReviews.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvReviews.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.lvReviews.ForeColor = System.Drawing.Color.White;
-            this.lvReviews.FullRowSelect = true;
-            this.lvReviews.HideSelection = false;
-            listViewItem13.IndentCount = 124;
-            this.lvReviews.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16});
-            this.lvReviews.Location = new System.Drawing.Point(405, 68);
-            this.lvReviews.Name = "lvReviews";
-            this.lvReviews.Size = new System.Drawing.Size(351, 271);
-            this.lvReviews.TabIndex = 39;
-            this.lvReviews.UseCompatibleStateImageBehavior = false;
-            // 
             // lblReviews
             // 
             this.lblReviews.AutoSize = true;
@@ -193,16 +168,24 @@
             this.pbShop.TabIndex = 10;
             this.pbShop.TabStop = false;
             // 
+            // lbReviews
+            // 
+            this.lbReviews.FormattingEnabled = true;
+            this.lbReviews.Location = new System.Drawing.Point(406, 68);
+            this.lbReviews.Name = "lbReviews";
+            this.lbReviews.Size = new System.Drawing.Size(349, 238);
+            this.lbReviews.TabIndex = 49;
+            // 
             // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Controls.Add(this.lbReviews);
             this.Controls.Add(this.btnRate);
             this.Controls.Add(this.lblAV);
             this.Controls.Add(this.lblReviews);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.lvReviews);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblValue3);
             this.Controls.Add(this.lblAbout);
@@ -228,10 +211,10 @@
         private System.Windows.Forms.Label lblAbout;
         private System.Windows.Forms.Label lblValue3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListView lvReviews;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblReviews;
         private System.Windows.Forms.Label lblAV;
         private System.Windows.Forms.Button btnRate;
+        private System.Windows.Forms.ListBox lbReviews;
     }
 }

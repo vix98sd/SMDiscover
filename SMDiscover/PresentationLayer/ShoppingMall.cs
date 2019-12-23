@@ -34,18 +34,6 @@ namespace PresentationLayer
             Discover?.BringToFront();
         }
 
-        private void btnToBeRemoved_Click(object sender, EventArgs e)
-        {
-            if(lvShops.FocusedItem != null)
-            {
-                foreach (DataLayer.models.Shop shop in mall.Shops)
-                    if (shop.Name == lvShops.FocusedItem.Text)
-                        Shop.shop = shop;
-                Shop.SetContent();
-                Shop?.BringToFront();
-            }
-        }
-
         private void ShoppingMall_Load(object sender, EventArgs e)
         {
             
@@ -58,10 +46,22 @@ namespace PresentationLayer
             lblValue2.Text = mall.Address;
             lblValue3.Text = mall.About;
 
-            lvShops.Items.Clear();
+            lbShops.Items.Clear();
             foreach (DataLayer.models.Shop shop in mall.Shops)
             {
-                lvShops.Items.Add(shop.Name);
+                lbShops.Items.Add(shop.Name);
+            }
+        }
+
+        private void lbShops_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbShops.SelectedIndex >= 0)
+            {
+                foreach (DataLayer.models.Shop shop in mall.Shops)
+                    if (shop.Name == lbShops.SelectedItem.ToString())
+                        Shop.shop = shop;
+                Shop.SetContent();
+                Shop?.BringToFront();
             }
         }
     }
