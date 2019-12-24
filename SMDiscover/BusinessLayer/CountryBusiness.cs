@@ -21,6 +21,12 @@ namespace BusinessLayer
             return countries;*/
             return this.countriesRepository.getAllCountries();
         }
-        // Cekam CountriesReSpository ;)
+        public string InsertCountry(Country c)
+        {
+            if (countriesRepository.InsertCoutry(c) != 0)
+                return "Inserted!";
+            else
+                return "Not inserted!";
+        }
     }
 }

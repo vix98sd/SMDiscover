@@ -40,7 +40,7 @@ namespace DataLayer
             }
         }
 
-        public int insertCoutry(Country country)
+        public int InsertCoutry(Country country)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -48,7 +48,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "INSERT INTO COUTRIES (COUNTRYNAME) VALUES (" + string.Format(
+                sqlCommand.CommandText = "INSERT INTO COUNTRIES (COUNTRYNAME) VALUES (" + string.Format(
                     "'{0}'", country.Name) + ");";
 
                 return sqlCommand.ExecuteNonQuery();

@@ -7,7 +7,17 @@ namespace UnitTests_SM_Discover
     public class SMShopUnitTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestInsert()
+        {
+        }
+
+        [TestMethod]
+        public void TestDelete()
+        {
+        }
+
+        [TestMethod]
+        public void TestUpdate()
         {
         }
     }

@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5205B11-FD5B-4DBB-A0CF-7161C27374B8}</ProjectGuid>
+    <ProjectGuid>{D2E0DF5E-83E4-48B0-9F60-45185C0235CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTests_SM_Discover</RootNamespace>
-    <AssemblyName>UnitTests_SM_Discover</AssemblyName>
+    <RootNamespace>UnitTestSMDiscover</RootNamespace>
+    <AssemblyName>UnitTestSMDiscover</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,34 +46,15 @@
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CityUnitTest.cs" />
-    <Compile Include="CountryUnitTest.cs" />
     <Compile Include="Library_SMD_Test.cs" />
-    <Compile Include="RatingUnitTest.cs" />
-    <Compile Include="ShoppingMallUnitTest.cs" />
-    <Compile Include="ShopUnitTest.cs" />
-    <Compile Include="SMShopUnitTest.cs" />
+    <Compile Include="UnitTestUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserUnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".editorconfig" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{3E139962-6EF1-4DF9-A80C-25B32146F28D}</Project>
-      <Name>BusinessLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
-      <Project>{F5BE6D30-5239-4471-8B19-503CF0AE97AC}</Project>
-      <Name>DataLayer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

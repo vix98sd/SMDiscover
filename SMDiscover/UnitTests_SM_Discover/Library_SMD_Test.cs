@@ -30,6 +30,7 @@ namespace UnitTests_SM_Discover
         {
             c.Name = RandomName(7);
             CountryBusiness cb = new CountryBusiness();
+            cb.InsertCountry(c);
         }
 
         public static void CreateCity(ref City c, Country country)
@@ -91,7 +92,7 @@ namespace UnitTests_SM_Discover
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             return new string(Enumerable.Repeat(chars, 8).Select(s => s[random.Next(s.Length)]).ToArray());
         }
-        private static string RandomName(int n)
+        public static string RandomName(int n)
         {
             const string charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             const string charsLower = "abcdefghijklmnopqrstuvwxyz";
