@@ -60,13 +60,7 @@ namespace PresentationLayer
             ShoppingMallBusiness shoppingMallBusiness = new ShoppingMallBusiness();
             malls = shoppingMallBusiness.GetAllShoppingMalls();
             
-            /*Country c = new Country();
-            c.Name = "Argentina";
-            countries.Add(c);
-
-            Country c0 = new Country();
-            c0.Name = "Pakistan";
-            countries.Add(c0);*/
+            
             foreach (Country country in countries)
             {
                 cbCountry.Items.Add(country.Name);
@@ -75,14 +69,6 @@ namespace PresentationLayer
 
         private void cbCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*City c = new City();
-            c.CityName = "Patka";
-            c.Country.Name = "Argentina";
-            City c2 = new City();
-            c2.CityName = "Patka2";
-            c2.Country.Name = "Pakistan";
-            cities.Add(c);
-            cities.Add(c2);*/
             cbTown.Items.Clear();
 
             foreach (City city in cities)
@@ -106,8 +92,6 @@ namespace PresentationLayer
                 }
 
             }
-            /*for(int i = 0; i < 3; i++)
-            lvDiscover.Items.Add("TEST 1 TEST 1 " + i);*/
         }
     }
 }
