@@ -26,6 +26,8 @@ namespace BusinessLayer
                     return "Shop already exsists.";
 
             // Poziv fje iz Data Layera
+            ShopsRepository shopsRepository = new ShopsRepository();
+            shopsRepository.InsertShop(shop);
 
             return "Successful insert - shop";
         }
@@ -33,6 +35,8 @@ namespace BusinessLayer
         public string UpdateShop(Shop shop)
         {
             // Poziv fje iz DataLayera
+            ShopsRepository shopsRepository = new ShopsRepository();
+            
 
             return "Successful update - shop";
         }
@@ -40,8 +44,10 @@ namespace BusinessLayer
         public string DeleteShop(Shop shop)
         {
             // Poziv fje iz DataLayera
+            ShopsRepository shopsRepository = new ShopsRepository();
+            shopsRepository.DeleteShop(shop.Id);
 
-            return "Successful udelete - shop";
+            return "Successful delete - shop";
         }
 
     }
