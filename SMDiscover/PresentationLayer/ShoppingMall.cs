@@ -34,21 +34,34 @@ namespace PresentationLayer
             Discover?.BringToFront();
         }
 
-        private void btnToBeRemoved_Click(object sender, EventArgs e)
+        private void ShoppingMall_Load(object sender, EventArgs e)
         {
-            Shop?.BringToFront();
+            
         }
 
-        private void ShoppingMall_Load(object sender, EventArgs e)
+        public void SetContent()
         {
             lblTitle.Text = mall.Name;
             lblValue1.Text = mall.HoursO + " - " + mall.HoursC;
             lblValue2.Text = mall.Address;
             lblValue3.Text = mall.About;
 
-            foreach(DataLayer.models.Shop shop in mall.Shops)
+            lbShops.Items.Clear();
+            foreach (DataLayer.models.Shop shop in mall.Shops)
             {
-                lvShops.Items.Add(shop.Name);
+                lbShops.Items.Add(shop.Name);
+            }
+        }
+
+        private void lbShops_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbShops.SelectedIndex >= 0)
+            {
+                foreach (DataLayer.models.Shop shop in mall.Shops)
+                    if (shop.Name == lbShops.SelectedItem.ToString())
+                        Shop.shop = shop;
+                Shop.SetContent();
+                Shop?.BringToFront();
             }
         }
     }

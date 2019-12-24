@@ -1,4 +1,5 @@
 ﻿using DataLayer.models;
+using DataLayer.sql_db;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -10,17 +11,9 @@ namespace DataLayer
 {
     public class SMShopsRepository
     {
-        // Vanja:
-        // private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBaseSMD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        // Laki:
-        //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-        // Miki:
-        private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscover;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-
-        public List<SMShop> GetAllSMShops()
+        string connectionString = new GlobalVariables().connectionString;
+            public List<SMShop> GetAllSMShops()
             {
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
@@ -41,6 +34,8 @@ namespace DataLayer
                         sMShop.No = sqlDataReader.GetInt32(0);
                         sMShop.SMId = sqlDataReader.GetInt32(1);
                         sMShop.ShopId = sqlDataReader.GetInt32(2);
+
+                        listToReturn.Add(sMShop);
                     }
 
                     return listToReturn;

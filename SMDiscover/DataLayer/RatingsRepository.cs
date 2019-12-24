@@ -1,4 +1,5 @@
 ﻿using DataLayer.models;
+using DataLayer.sql_db;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -10,11 +11,7 @@ namespace DataLayer
 {
     public class RatingsRepository
     {
-        // Vanja:
-        //private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DataBaseSMD;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-        // Laki:
-        //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = new GlobalVariables().connectionString;
 
         // Miki:
         private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscover;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
@@ -42,6 +39,8 @@ namespace DataLayer
                     rating.ShopId = sqlDataReader.GetInt32(1);
                     rating.Rate = sqlDataReader.GetInt32(2);
                     rating.Comment = sqlDataReader.GetString(3);
+
+                    listToReturn.Add(rating);
                 }
 
                 return listToReturn;
@@ -71,7 +70,7 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "UPDATE RATINGS SET RATE = '" + rating.Rate +
-                    "', COMMENT = '" + rating.Comment + "' WHERE ID_USER = " + rating.UserId + " AND ID_SHOP" + rating.ShopId;
+                    "', COMMENT = '" + rating.Comment + "' WHERE ID_USER = " + rating.UserId + " AND ID_SHOP = " + rating.ShopId;
 
                 return sqlCommand.ExecuteNonQuery();
             }

@@ -38,15 +38,15 @@ namespace PresentationLayer
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if(lvDiscover.FocusedItem != null)
+            if(lbDiscover.SelectedIndex >= 0)
             {
-                lblDiscover.Text = lvDiscover.FocusedItem.Text;
                 foreach(DataLayer.models.ShoppingMall mall in mallsInCity)
                 {
-                    if (mall.Name == lvDiscover.FocusedItem.Text)
+                    if (mall.Name == lbDiscover.SelectedItem.ToString())
                         ShoppingMall.mall = mall;
                 }
 
+                ShoppingMall.SetContent();
                 ShoppingMall?.BringToFront();
             }
         }
@@ -95,12 +95,13 @@ namespace PresentationLayer
         private void cbTown_SelectedIndexChanged(object sender, EventArgs e)
         {
             mallsInCity.Clear();
-            
+            lbDiscover.Items.Clear();
+
             foreach (DataLayer.models.ShoppingMall mall in malls)
             {
                 if (mall.City.CityName == cbTown.Text && mall.City.Country.Name == cbCountry.Text)
                 {
-                    lvDiscover.Items.Add(mall.Name);
+                    lbDiscover.Items.Add(mall.Name);
                     mallsInCity.Add(mall);
                 }
 
