@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataLayer.models.User user1 = new DataLayer.models.User();
             this.MenuPanel = new System.Windows.Forms.Panel();
             this.btnEditUser = new System.Windows.Forms.Button();
             this.pbCrown = new System.Windows.Forms.PictureBox();
@@ -255,7 +256,7 @@
             // editMall1
             // 
             this.editMall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.editMall1.Location = new System.Drawing.Point(243, 149);
+            this.editMall1.Location = new System.Drawing.Point(243, 146);
             this.editMall1.Name = "editMall1";
             this.editMall1.Size = new System.Drawing.Size(771, 422);
             this.editMall1.TabIndex = 20;
@@ -263,16 +264,26 @@
             // review1
             // 
             this.review1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.review1.Location = new System.Drawing.Point(648, 224);
+            this.review1.Location = new System.Drawing.Point(648, 203);
             this.review1.Name = "review1";
             this.review1.Shop = null;
             this.review1.Size = new System.Drawing.Size(351, 271);
             this.review1.TabIndex = 19;
+            user1.Admin = 0;
+            user1.Answer = null;
+            user1.Email = null;
+            user1.Id = 0;
+            user1.Name = null;
+            user1.Password = null;
+            user1.SecretQuestion = null;
+            user1.Surname = null;
+            user1.Username = null;
+            this.review1.User = user1;
             // 
             // editUser1
             // 
             this.editUser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.editUser1.Location = new System.Drawing.Point(243, 149);
+            this.editUser1.Location = new System.Drawing.Point(243, 146);
             this.editUser1.Name = "editUser1";
             this.editUser1.Size = new System.Drawing.Size(771, 422);
             this.editUser1.TabIndex = 18;
@@ -290,7 +301,7 @@
             // shop1
             // 
             this.shop1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.shop1.Location = new System.Drawing.Point(243, 149);
+            this.shop1.Location = new System.Drawing.Point(243, 146);
             this.shop1.Name = "shop1";
             this.shop1.Review = null;
             this.shop1.ShoppingMall = null;
@@ -309,7 +320,7 @@
             // editShop1
             // 
             this.editShop1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.editShop1.Location = new System.Drawing.Point(243, 149);
+            this.editShop1.Location = new System.Drawing.Point(243, 146);
             this.editShop1.Name = "editShop1";
             this.editShop1.Size = new System.Drawing.Size(771, 422);
             this.editShop1.TabIndex = 21;
@@ -319,9 +330,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 583);
+            this.Controls.Add(this.review1);
             this.Controls.Add(this.editShop1);
             this.Controls.Add(this.editMall1);
-            this.Controls.Add(this.review1);
             this.Controls.Add(this.editUser1);
             this.Controls.Add(this.shoppingMall1);
             this.Controls.Add(this.shop1);

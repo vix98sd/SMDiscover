@@ -170,10 +170,15 @@
             // 
             // lbReviews
             // 
+            this.lbReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.lbReviews.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbReviews.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lbReviews.ForeColor = System.Drawing.Color.White;
             this.lbReviews.FormattingEnabled = true;
+            this.lbReviews.ItemHeight = 21;
             this.lbReviews.Location = new System.Drawing.Point(406, 68);
             this.lbReviews.Name = "lbReviews";
-            this.lbReviews.Size = new System.Drawing.Size(349, 238);
+            this.lbReviews.Size = new System.Drawing.Size(349, 231);
             this.lbReviews.TabIndex = 49;
             // 
             // Shop
