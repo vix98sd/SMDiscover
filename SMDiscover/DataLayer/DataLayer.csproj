@@ -56,13 +56,12 @@
     <Compile Include="ShoppingMallsRepository.cs" />
     <Compile Include="ShopsRepository.cs" />
     <Compile Include="SMShopsRepository.cs" />
+    <Compile Include="sql_db\GlobalVariables.cs" />
     <Compile Include="UsersRepository.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="sql_db\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DatabaseCreateTableQueries.txt" />
+    <Content Include="sql_db\DatabaseCreateTableQueries.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

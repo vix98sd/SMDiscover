@@ -1,4 +1,5 @@
 ﻿using DataLayer.models;
+using DataLayer.sql_db;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -10,11 +11,7 @@ namespace DataLayer
 {
     public class ShopsRepository
     {
-        // Vanja:
-        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-        // Laki:
-        //private string connectionString = "Data Source=Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscoverDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = new GlobalVariables().connectionString;
 
         public List<Shop> GetAllShops()
         {
