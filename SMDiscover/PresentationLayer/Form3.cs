@@ -33,7 +33,8 @@ namespace PresentationLayer
         private void button1_Click(object sender, EventArgs e)
         {
             SidePanel.Height = btnDiscover.Height;
-            SidePanel.Top = btnDiscover.Top; 
+            SidePanel.Top = btnDiscover.Top;
+            discover1.BringToFront();
 
         }
 
@@ -41,6 +42,7 @@ namespace PresentationLayer
         {
             SidePanel.Height = btnEditMall.Height;
             SidePanel.Top = btnEditMall.Top;
+            editMall1.SetContent();
             editMall1.BringToFront();
             editUser1.ClearEditUserForm();
         }

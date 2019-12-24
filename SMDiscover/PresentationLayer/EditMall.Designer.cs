@@ -50,6 +50,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.cbSelect = new System.Windows.Forms.ComboBox();
+            this.lblSelect = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblEditMall
@@ -76,6 +78,7 @@
             this.btnAddUser.Size = new System.Drawing.Size(85, 33);
             this.btnAddUser.TabIndex = 48;
             this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // lblInfo
             // 
@@ -93,7 +96,7 @@
             this.tbName.BackColor = System.Drawing.SystemColors.Window;
             this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbName.Location = new System.Drawing.Point(201, 173);
+            this.tbName.Location = new System.Drawing.Point(201, 187);
             this.tbName.Name = "tbName";
             this.tbName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbName.Size = new System.Drawing.Size(159, 19);
@@ -105,7 +108,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(70, 170);
+            this.lblName.Location = new System.Drawing.Point(70, 184);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(66, 22);
             this.lblName.TabIndex = 52;
@@ -115,17 +118,18 @@
             // 
             this.cbCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCountry.FormattingEnabled = true;
-            this.cbCountry.Location = new System.Drawing.Point(201, 209);
+            this.cbCountry.Location = new System.Drawing.Point(201, 223);
             this.cbCountry.Name = "cbCountry";
             this.cbCountry.Size = new System.Drawing.Size(159, 21);
             this.cbCountry.TabIndex = 55;
+            this.cbCountry.SelectedIndexChanged += new System.EventHandler(this.cbCountry_SelectedIndexChanged);
             // 
             // lblCountry
             // 
             this.lblCountry.AutoSize = true;
             this.lblCountry.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry.ForeColor = System.Drawing.Color.White;
-            this.lblCountry.Location = new System.Drawing.Point(70, 209);
+            this.lblCountry.Location = new System.Drawing.Point(70, 223);
             this.lblCountry.Name = "lblCountry";
             this.lblCountry.Size = new System.Drawing.Size(85, 22);
             this.lblCountry.TabIndex = 54;
@@ -135,7 +139,7 @@
             // 
             this.cbTown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbTown.FormattingEnabled = true;
-            this.cbTown.Location = new System.Drawing.Point(201, 249);
+            this.cbTown.Location = new System.Drawing.Point(201, 263);
             this.cbTown.Name = "cbTown";
             this.cbTown.Size = new System.Drawing.Size(159, 21);
             this.cbTown.TabIndex = 57;
@@ -145,7 +149,7 @@
             this.lblTown.AutoSize = true;
             this.lblTown.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTown.ForeColor = System.Drawing.Color.White;
-            this.lblTown.Location = new System.Drawing.Point(70, 249);
+            this.lblTown.Location = new System.Drawing.Point(70, 263);
             this.lblTown.Name = "lblTown";
             this.lblTown.Size = new System.Drawing.Size(58, 22);
             this.lblTown.TabIndex = 56;
@@ -156,7 +160,7 @@
             this.tbLocation.BackColor = System.Drawing.SystemColors.Window;
             this.tbLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbLocation.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLocation.Location = new System.Drawing.Point(201, 288);
+            this.tbLocation.Location = new System.Drawing.Point(201, 302);
             this.tbLocation.Name = "tbLocation";
             this.tbLocation.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbLocation.Size = new System.Drawing.Size(159, 19);
@@ -168,7 +172,7 @@
             this.lblLocation.AutoSize = true;
             this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocation.ForeColor = System.Drawing.Color.White;
-            this.lblLocation.Location = new System.Drawing.Point(70, 285);
+            this.lblLocation.Location = new System.Drawing.Point(70, 299);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(83, 22);
             this.lblLocation.TabIndex = 58;
@@ -179,7 +183,7 @@
             this.tbAbout.BackColor = System.Drawing.SystemColors.Window;
             this.tbAbout.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbAbout.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbAbout.Location = new System.Drawing.Point(531, 211);
+            this.tbAbout.Location = new System.Drawing.Point(531, 225);
             this.tbAbout.Name = "tbAbout";
             this.tbAbout.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbAbout.Size = new System.Drawing.Size(159, 19);
@@ -191,7 +195,7 @@
             this.lblAbout.AutoSize = true;
             this.lblAbout.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAbout.ForeColor = System.Drawing.Color.White;
-            this.lblAbout.Location = new System.Drawing.Point(383, 208);
+            this.lblAbout.Location = new System.Drawing.Point(383, 222);
             this.lblAbout.Name = "lblAbout";
             this.lblAbout.Size = new System.Drawing.Size(69, 22);
             this.lblAbout.TabIndex = 60;
@@ -202,7 +206,7 @@
             this.tbImage.BackColor = System.Drawing.SystemColors.Window;
             this.tbImage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbImage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbImage.Location = new System.Drawing.Point(531, 252);
+            this.tbImage.Location = new System.Drawing.Point(531, 266);
             this.tbImage.Name = "tbImage";
             this.tbImage.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbImage.Size = new System.Drawing.Size(159, 19);
@@ -214,7 +218,7 @@
             this.lblImage.AutoSize = true;
             this.lblImage.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImage.ForeColor = System.Drawing.Color.White;
-            this.lblImage.Location = new System.Drawing.Point(383, 249);
+            this.lblImage.Location = new System.Drawing.Point(383, 263);
             this.lblImage.Name = "lblImage";
             this.lblImage.Size = new System.Drawing.Size(70, 22);
             this.lblImage.TabIndex = 62;
@@ -225,7 +229,7 @@
             this.tbOpen.BackColor = System.Drawing.SystemColors.Window;
             this.tbOpen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbOpen.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOpen.Location = new System.Drawing.Point(531, 288);
+            this.tbOpen.Location = new System.Drawing.Point(531, 302);
             this.tbOpen.Name = "tbOpen";
             this.tbOpen.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbOpen.Size = new System.Drawing.Size(31, 19);
@@ -237,7 +241,7 @@
             this.lblWorkingHours.AutoSize = true;
             this.lblWorkingHours.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWorkingHours.ForeColor = System.Drawing.Color.White;
-            this.lblWorkingHours.Location = new System.Drawing.Point(383, 285);
+            this.lblWorkingHours.Location = new System.Drawing.Point(383, 299);
             this.lblWorkingHours.Name = "lblWorkingHours";
             this.lblWorkingHours.Size = new System.Drawing.Size(137, 22);
             this.lblWorkingHours.TabIndex = 64;
@@ -248,7 +252,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.label6.Location = new System.Drawing.Point(568, 285);
+            this.label6.Location = new System.Drawing.Point(568, 299);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(16, 22);
             this.label6.TabIndex = 66;
@@ -259,7 +263,7 @@
             this.tbClose.BackColor = System.Drawing.SystemColors.Window;
             this.tbClose.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbClose.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbClose.Location = new System.Drawing.Point(590, 288);
+            this.tbClose.Location = new System.Drawing.Point(590, 302);
             this.tbClose.Name = "tbClose";
             this.tbClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbClose.Size = new System.Drawing.Size(31, 19);
@@ -271,7 +275,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(197)))), ((int)(((byte)(130)))));
-            this.label7.Location = new System.Drawing.Point(627, 285);
+            this.label7.Location = new System.Drawing.Point(627, 299);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(22, 22);
             this.label7.TabIndex = 68;
@@ -285,11 +289,12 @@
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Image = global::PresentationLayer.Properties.Resources.delete;
-            this.btnDelete.Location = new System.Drawing.Point(445, 159);
+            this.btnDelete.Location = new System.Drawing.Point(445, 173);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(39, 33);
             this.btnDelete.TabIndex = 70;
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -299,17 +304,41 @@
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::PresentationLayer.Properties.Resources.search_32px;
-            this.btnSearch.Location = new System.Drawing.Point(387, 159);
+            this.btnSearch.Location = new System.Drawing.Point(387, 173);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(39, 33);
             this.btnSearch.TabIndex = 69;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // cbSelect
+            // 
+            this.cbSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSelect.FormattingEnabled = true;
+            this.cbSelect.Location = new System.Drawing.Point(201, 149);
+            this.cbSelect.Name = "cbSelect";
+            this.cbSelect.Size = new System.Drawing.Size(159, 21);
+            this.cbSelect.TabIndex = 72;
+            this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
+            // 
+            // lblSelect
+            // 
+            this.lblSelect.AutoSize = true;
+            this.lblSelect.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelect.ForeColor = System.Drawing.Color.White;
+            this.lblSelect.Location = new System.Drawing.Point(70, 149);
+            this.lblSelect.Name = "lblSelect";
+            this.lblSelect.Size = new System.Drawing.Size(106, 22);
+            this.lblSelect.TabIndex = 71;
+            this.lblSelect.Text = "Select mall";
             // 
             // EditMall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Controls.Add(this.cbSelect);
+            this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label7);
@@ -363,5 +392,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox cbSelect;
+        private System.Windows.Forms.Label lblSelect;
     }
 }

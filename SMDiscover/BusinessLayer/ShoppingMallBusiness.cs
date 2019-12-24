@@ -29,7 +29,8 @@ namespace BusinessLayer
                 if (s.Name == shoppingMall.Name && s.Address == shoppingMall.Address && s.City == shoppingMall.City)
                     return "Shopping Mall already exsists.";
 
-            // Poziv fje iz Data Layera
+            ShoppingMallsRepository shoppingMallsRepository = new ShoppingMallsRepository();
+            shoppingMallsRepository.InsertShoppingMall(shoppingMall);
 
             return "Successful insert - shopping mall";
         }
@@ -37,15 +38,17 @@ namespace BusinessLayer
         public string UpdateShoppingMall(ShoppingMall shoppingMall)
         {
             // Poziv fje iz DataLayera
-
+            ShoppingMallsRepository shoppingMallsRepository = new ShoppingMallsRepository();
+            
             return "Successful update - shopping mall";
         }
 
         public string DeleteShoppingMall(ShoppingMall shoppingMall)
         {
             // Poziv fje iz DataLayera
-
-            return "Successful udelete - shopping mall";
+            ShoppingMallsRepository shoppingMallsRepository = new ShoppingMallsRepository();
+            shoppingMallsRepository.DeleteShoppingMall(shoppingMall.Id);
+            return "Successful delete - shopping mall";
         }
 
         // Metoda vrsi postavljanje Shopova u Shopping mallove
