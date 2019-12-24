@@ -13,6 +13,10 @@ namespace DataLayer
     {
         string connectionString = new GlobalVariables().connectionString;
 
+        // Miki:
+        private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SMDiscover;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+
         public List<Shop> GetAllShops()
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
