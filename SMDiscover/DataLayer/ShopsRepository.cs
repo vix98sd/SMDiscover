@@ -55,7 +55,7 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "INSERT INTO SHOPS (NAME, ADDRESS, ABOUT, IMAGE, COUNTRYNAME, CITYNAME) VALUES(" + string.Format(
-                    "'{0}', '{1}', '{2}', '{3}', '{4}', '{5}'", shop.Name, shop.Address, shop.About, shop.Image, shop.City.Country, shop.City.CityName) + ")";
+                    "'{0}', '{1}', '{2}', '{3}', '{4}', '{5}'", shop.Name, shop.Address, shop.About, shop.Image, shop.City.Country.Name, shop.City.CityName) + ")";
                 return sqlCommand.ExecuteNonQuery();
             }
         }
