@@ -26,6 +26,8 @@ namespace BusinessLayer
                     return "Shop already exsists ih this shopping mall.";
 
             // Poziv fje iz Data Layera
+            SMShopsRepository sMShopsRepository = new SMShopsRepository();
+            sMShopsRepository.InsertSMShop(shop);
 
             return "Successful insert - shop in shopping mall";
         }

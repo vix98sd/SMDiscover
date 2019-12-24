@@ -34,6 +34,7 @@ namespace PresentationLayer
         {
             SidePanel.Height = btnDiscover.Height;
             SidePanel.Top = btnDiscover.Top;
+            discover1.SetContent();
             discover1.BringToFront();
 
         }
@@ -56,6 +57,7 @@ namespace PresentationLayer
         {
             SidePanel.Height = btnEditShop.Height;
             SidePanel.Top = btnEditShop.Top;
+            editShop1.SetContent();
             editShop1.BringToFront();
             editUser1.ClearEditUserForm();
 

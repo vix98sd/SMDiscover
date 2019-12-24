@@ -180,29 +180,6 @@ namespace PresentationLayer
                     cbTown.Items.Add(city.CityName);
             }
         }
-
-        private List<DataLayer.models.ShoppingMall> MallsByCountry(Country country)
-        {
-            List<DataLayer.models.ShoppingMall> malls = new List<DataLayer.models.ShoppingMall>();
-            foreach(DataLayer.models.ShoppingMall shoppingMall in shoppingMalls)
-            {
-                if (shoppingMall.City.Country.Name == country.Name)
-                    malls.Add(shoppingMall);
-            }
-
-            return malls;
-        }
-
-        private List<DataLayer.models.ShoppingMall> MallsByCity(string city)
-        {
-            List<DataLayer.models.ShoppingMall> malls = new List<DataLayer.models.ShoppingMall>();
-            foreach (DataLayer.models.ShoppingMall shoppingMall in shoppingMalls)
-            {
-                if (shoppingMall.City.CityName == city)
-                    malls.Add(shoppingMall);
-            }
-
-            return malls;
-        }
+        
     }
 }

@@ -53,6 +53,11 @@ namespace PresentationLayer
 
         private void Discover_Load(object sender, EventArgs e)
         {
+            SetContent();
+        }
+
+        public void SetContent()
+        {
             CountryBusiness countryBusiness = new CountryBusiness();
             countries = countryBusiness.GetAllCountires();
             CityBusiness cityBusiness = new CityBusiness();
@@ -65,6 +70,9 @@ namespace PresentationLayer
             {
                 cbCountry.Items.Add(country.Name);
             }
+
+
+            cbTown_SelectedIndexChanged(new object(), new EventArgs());
         }
 
         private void cbCountry_SelectedIndexChanged(object sender, EventArgs e)
