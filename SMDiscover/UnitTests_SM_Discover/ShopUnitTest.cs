@@ -51,12 +51,12 @@ namespace UnitTests_SM_Discover
         {
             using (TransactionScope scope = new TransactionScope())
             {
-                //Init();
+                Init();
 
-                //s.Name = Library_SMD_Test.RandomName(8);
-                //sb.UpdateShop(s);
-                //if (!sb.GetAllShops().Exists(tmp => tmp.Id == s.Id && tmp.Name==s.Name))
-                    //Assert.Fail("Shop was not deleted!");
+                s.Name = Library_SMD_Test.RandomName(8);
+                sb.UpdateShop(s);
+                if (!sb.GetAllShops().Exists(tmp => tmp.Id == s.Id && tmp.Name==s.Name))
+                    Assert.Fail("Shop was not deleted!");
             }
         }
     }
