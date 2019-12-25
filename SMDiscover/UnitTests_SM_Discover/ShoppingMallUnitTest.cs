@@ -42,7 +42,7 @@ namespace UnitTests_SM_Discover
 
                 smb.DeleteShoppingMall(sm);
                 if (smb.GetAllShoppingMalls().Exists(tmp => tmp.Id == sm.Id))
-                    Assert.Fail("Shop was not inserted!");
+                    Assert.Fail("Shop was not deleted!");
             }
         }
 
@@ -56,7 +56,7 @@ namespace UnitTests_SM_Discover
                 sm.Name = Library_SMD_Test.RandomName(7);
                 smb.UpdateShoppingMall(sm);
                 if (!smb.GetAllShoppingMalls().Exists(tmp => tmp.Id == sm.Id && tmp.Name==sm.Name))
-                    Assert.Fail("Shop was not inserted!");
+                    Assert.Fail("Shop was not updated!");
             }
         }
     }

@@ -32,10 +32,11 @@ namespace BusinessLayer
             return "Successful insert - shop in shopping mall";
         }
 
-        public string DeleteShopFromMall(SMShop shop)
+        public string DeleteShop(SMShop shop)
         {
             // Poziv fje iz DataLayera
-
+            SMShopsRepository sMShopsRepository = new SMShopsRepository();
+            sMShopsRepository.DeleteSMShop(shop.No);
             return "Successful delete - shop from mall";
         }
 

@@ -39,7 +39,8 @@ namespace BusinessLayer
         {
             // Poziv fje iz DataLayera
             ShoppingMallsRepository shoppingMallsRepository = new ShoppingMallsRepository();
-            
+
+            shoppingMallsRepository.UpdateShoppingMall(shoppingMall);
             return "Successful update - shopping mall";
         }
 

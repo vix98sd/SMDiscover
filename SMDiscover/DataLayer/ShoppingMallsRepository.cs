@@ -74,8 +74,8 @@ namespace DataLayer
                 sqlCommand.CommandText = "UPDATE SHOPPING_MALLS SET NAME = '" + shoppingMall.Name +
                     "', ADDRESS = '" + shoppingMall.Address + "', ABOUT = '" + shoppingMall.About +
                     "', IMAGE = '" + shoppingMall.Image + "', HOURSOPEN = '" + shoppingMall.HoursC +
-                    "', HOURSCLOSED = '" + shoppingMall.HoursC + "', COUNTRYNAME = '" + shoppingMall.City.Country +
-                    "', CITYNAME = '" + shoppingMall.City.CityName + "' WHERE ID = " + shoppingMall.Id;
+                    "', HOURSCLOSED = '" + shoppingMall.HoursC + "', COUNTRYNAME = '" + shoppingMall.City.Country.Name +
+                    "', CITYNAME = '" + shoppingMall.City.CityName + "' WHERE ID_SM = " + shoppingMall.Id;
                 return sqlCommand.ExecuteNonQuery();
             }
         }

@@ -56,7 +56,7 @@ namespace UnitTests_SM_Discover
                 s.Name = Library_SMD_Test.RandomName(8);
                 sb.UpdateShop(s);
                 if (!sb.GetAllShops().Exists(tmp => tmp.Id == s.Id && tmp.Name==s.Name))
-                    Assert.Fail("Shop was not deleted!");
+                    Assert.Fail("Shop was not updated!");
             }
         }
     }
