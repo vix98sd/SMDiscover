@@ -63,6 +63,23 @@ namespace DataLayer
             }
         }
 
+        public int UpdateShoppingMall(ShoppingMall shoppingMall)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = "UPDATE SHOPPING_MALLS SET NAME = '" + shoppingMall.Name +
+                    "', ADDRESS = '" + shoppingMall.Address + "', ABOUT = '" + shoppingMall.About +
+                    "', IMAGE = '" + shoppingMall.Image + "', HOURSOPEN = '" + shoppingMall.HoursC +
+                    "', HOURSCLOSED = '" + shoppingMall.HoursC + "', COUNTRYNAME = '" + shoppingMall.City.Country +
+                    "', CITYNAME = '" + shoppingMall.City.CityName + "' WHERE ID = " + shoppingMall.Id;
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+
         public int DeleteShoppingMall(int smID)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
