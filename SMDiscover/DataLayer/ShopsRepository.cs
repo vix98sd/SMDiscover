@@ -60,6 +60,22 @@ namespace DataLayer
             }
         }
 
+        public int UpdateShop(Shop shop)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand sqlCommand = new SqlCommand();
+                sqlCommand.Connection = sqlConnection;
+                sqlCommand.CommandText = "UPDATE SHOPS SET NAME = '" + shop.Name +
+                    "', ADDRESS = '" + shop.Address + "', ABOUT = '" + shop.About +
+                    "', IMAGE = '" + shop.Image + "', COUNTRYNAME = '"+ shop.City.Country +
+                    "', CITYNAME = '" + shop.City.CityName + "' WHERE ID = " + shop.Id;
+                return sqlCommand.ExecuteNonQuery();
+            }
+        }
+
         public int DeleteShop(int shopID)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
