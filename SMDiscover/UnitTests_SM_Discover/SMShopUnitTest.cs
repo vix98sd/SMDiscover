@@ -47,14 +47,8 @@ namespace UnitTests_SM_Discover
 
                 smsb.DeleteShop(sms);
                 if (smsb.GetAllSMShops().Exists(tmp => tmp.ShopId == sms.ShopId && tmp.SMId == sms.SMId && tmp.No==sms.No))
-                    Assert.Fail("SMShop was not inserted!");
+                    Assert.Fail("SMShop was not deleted!");
             }
-        }
-
-        [TestMethod]
-        public void TestUpdate()
-        {
-            // Nemam update funkciju
         }
     }
 }

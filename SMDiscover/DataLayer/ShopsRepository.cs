@@ -70,8 +70,8 @@ namespace DataLayer
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = "UPDATE SHOPS SET NAME = '" + shop.Name +
                     "', ADDRESS = '" + shop.Address + "', ABOUT = '" + shop.About +
-                    "', IMAGE = '" + shop.Image + "', COUNTRYNAME = '"+ shop.City.Country +
-                    "', CITYNAME = '" + shop.City.CityName + "' WHERE ID = " + shop.Id;
+                    "', IMAGE = '" + shop.Image + "', COUNTRYNAME = '"+ shop.City.Country.Name +
+                    "', CITYNAME = '" + shop.City.CityName + "' WHERE ID_SHOP = " + shop.Id;
                 return sqlCommand.ExecuteNonQuery();
             }
         }

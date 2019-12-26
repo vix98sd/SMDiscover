@@ -36,8 +36,8 @@ namespace BusinessLayer
         {
             // Poziv fje iz DataLayera
             ShopsRepository shopsRepository = new ShopsRepository();
-            
 
+            shopsRepository.UpdateShop(shop);
             return "Successful update - shop";
         }
 

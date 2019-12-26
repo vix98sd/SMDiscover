@@ -42,14 +42,22 @@ namespace UnitTests_SM_Discover
 
                 smb.DeleteShoppingMall(sm);
                 if (smb.GetAllShoppingMalls().Exists(tmp => tmp.Id == sm.Id))
-                    Assert.Fail("Shop was not inserted!");
+                    Assert.Fail("Shop was not deleted!");
             }
         }
 
         [TestMethod]
         public void TestUpdate()
         {
-            // Treba mi update funkcija iz data layera!!!
+            using (TransactionScope scope = new TransactionScope())
+            {
+                Init();
+
+                sm.Name = Library_SMD_Test.RandomName(7);
+                smb.UpdateShoppingMall(sm);
+                if (!smb.GetAllShoppingMalls().Exists(tmp => tmp.Id == sm.Id && tmp.Name==sm.Name))
+                    Assert.Fail("Shop was not updated!");
+            }
         }
     }
 }
