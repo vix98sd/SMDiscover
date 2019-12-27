@@ -60,6 +60,7 @@ namespace UnitTests_SM_Discover
                 Init();
 
                 r.Rate = rand.Next(1, 5);
+                rb.UpdateRating(r);
                 if (!rb.GetAllRatings().Exists(tmp => tmp.UserId == r.UserId && tmp.ShopId == r.ShopId && tmp.Rate==r.Rate))
                     Assert.Fail("Rating was not updated!");
             }

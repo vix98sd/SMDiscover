@@ -86,7 +86,7 @@ namespace DataLayer
 
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "DELETE FROM SHOPS WHERE ID_SHOP = " + shopID;
+                sqlCommand.CommandText = "DELETE FROM SM_SHOP WHERE ID_SHOP = " + shopID;
                 countExecuteNonQuery += sqlCommand.ExecuteNonQuery();
                 sqlCommand.CommandText = "DELETE FROM SHOPS WHERE ID_SHOP = " + shopID;
                 countExecuteNonQuery += sqlCommand.ExecuteNonQuery();
